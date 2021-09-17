@@ -38,6 +38,7 @@
 # End of https://www.gitignore.io/api/c++
 
 # Extras
+logs/
 [Bb]uild/
 .rgignore
 
