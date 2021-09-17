@@ -13,10 +13,11 @@ Dwki::HeaderBarPanel::HeaderBarPanel()
       Gtk::Widget(),
       m_padding()
 {
-  add_css_class("header-bar");
+  add_css_class("header-bar-panel");
   appTitle.set_text("Test");
   set_expand(true);
   m_refCssProvider = CssSourceProvider().getCssSource();
+  get_style_context()->add_provider(m_refCssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
 }
 
 void Dwki::HeaderBarPanel::measure_vfunc(Gtk::Orientation orientation,
