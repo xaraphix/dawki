@@ -17,18 +17,9 @@ class HeaderBarPanel : public CssClassInitializer, public Gtk::Box
   HeaderBarPanel();
 
  protected:
-  Dwki::AppWindowActionBarPanel appWindowActionBarPanel;
+  Dwki::AppWindowActionBarPanel  appWindowActionBarPanel;
   Gtk::Label                     appTitle;
-  Dwki::ContentActionBarPanel   contentActionBarPanel;
+  Dwki::ContentActionBarPanel    contentActionBarPanel;
   Glib::RefPtr<Gtk::CssProvider> m_refCssProvider;
-
-  void measure_vfunc(Gtk::Orientation orientation, int for_size, int& minimum,
-                     int& natural, int& minimum_baseline,
-                     int& natural_baseline) const override;
-  void on_map() override;
-  void on_unmap() override;
-  void on_realize() override;
-  void on_unrealize() override;
-
 };
 }  // namespace Dwki
