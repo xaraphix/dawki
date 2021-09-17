@@ -2,13 +2,16 @@
 
 #include "dawki/logging/logging.h"
 
-Glib::RefPtr<Gtk::CssProvider> Dwki::CssSourceProvider::getCssSource()
+Dwki::CssSourceProvider::CssSourceProvider()
 {
   m_refCssProvider = Gtk::CssProvider::create();
   m_refCssProvider->signal_parsing_error().connect(
       sigc::mem_fun(*this, &CssSourceProvider::on_parsing_error));
   m_refCssProvider->load_from_path("/home/suyash/Code/dawki/assets/dawki.css");
+}
 
+Glib::RefPtr<Gtk::CssProvider> Dwki::CssSourceProvider::getCssSource()
+{
   return m_refCssProvider;
 }
 

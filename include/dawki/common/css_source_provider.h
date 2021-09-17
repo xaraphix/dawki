@@ -1,5 +1,7 @@
 #pragma once
 
+#include <memory>
+
 #include "gtkmm/cssprovider.h"
 
 namespace Dwki
@@ -8,7 +10,19 @@ namespace Dwki
 class CssSourceProvider
 {
  public:
+  CssSourceProvider(CssSourceProvider const&) = delete;
+  CssSourceProvider& operator=(CssSourceProvider const&) = delete;
+
+  static std::shared_ptr<CssSourceProvider> Get()
+  {
+    static std::shared_ptr<CssSourceProvider> p{new CssSourceProvider};
+    return p;
+  }
+
   Glib::RefPtr<Gtk::CssProvider> getCssSource();
+
+ private:
+  CssSourceProvider();
 
  protected:
   Glib::RefPtr<Gtk::CssProvider> m_refCssProvider;
@@ -16,3 +30,4 @@ class CssSourceProvider
                         const Glib::Error&                         error);
 };
 }  // namespace Dwki
+

@@ -15,9 +15,10 @@ Dwki::HeaderBarPanel::HeaderBarPanel()
 {
   add_css_class("header-bar-panel");
   appTitle.set_text("Test");
-  set_expand(true);
-  m_refCssProvider = CssSourceProvider().getCssSource();
-  get_style_context()->add_provider(m_refCssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+  set_expand(false);
+  m_refCssProvider = CssSourceProvider::Get()->getCssSource();
+  get_style_context()->add_provider(m_refCssProvider,
+                                    GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
 }
 
 void Dwki::HeaderBarPanel::measure_vfunc(Gtk::Orientation orientation,
@@ -26,11 +27,11 @@ void Dwki::HeaderBarPanel::measure_vfunc(Gtk::Orientation orientation,
                                          int& natural_baseline) const
 {
   if (orientation == Gtk::Orientation::HORIZONTAL) {
-    minimum = 60;
-    natural = 100;
+    minimum = 10;
+    natural = 20;
   } else {
-    minimum = 50;
-    natural = 70;
+    minimum = 10;
+    natural = 20;
   }
 
   // Don't use baseline alignment.

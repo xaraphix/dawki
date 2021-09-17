@@ -3,7 +3,7 @@
 
 int main(int argc, char* argv[])
 {
-  Dwki::init_logging();
+  /* Dwki::init_logging(); */
   auto app = Gtk::Application::create("in.suyashsingh");
   return app->make_window_and_run<AppRootWindow>(argc, argv);
 }

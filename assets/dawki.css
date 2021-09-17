@@ -1,4 +1,10 @@
+window{
+  background: rgb(40, 42, 43);
+}
+
 .header-bar-panel{
-  background: rgb(14, 14, 14);
-  padding: 2px;
+}
+.navigation-panel{
+  background: rgb(30, 30, 31);
+  min-width: 300px;
 }
