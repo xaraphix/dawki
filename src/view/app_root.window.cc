@@ -6,7 +6,3 @@ AppRootWindow::AppRootWindow()
   maximize();
 }
 
-void AppRootWindow::title_bar()
-{
-  unset_titlebar();
-}
