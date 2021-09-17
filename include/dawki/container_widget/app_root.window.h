@@ -13,6 +13,7 @@ class AppRootWindow : public Gtk::Window
     AppRootWindow();
 
   private:
+    Gtk::WindowHandle windowHandle;
     Dwki::HeaderBarPanel headerBarPanel;
     Gtk::Box windowContainer;
     Dwki::NavigationPanel navigationPanel;

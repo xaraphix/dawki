@@ -2,7 +2,8 @@
 
 AppRootWindow::AppRootWindow() 
 {
-  set_titlebar(headerBarPanel);
+  windowHandle.set_child(headerBarPanel);
+  set_titlebar(windowHandle);
   windowContainer.set_orientation(Gtk::Orientation::HORIZONTAL);
   windowContainer.append(navigationPanel);
   windowContainer.append(contentPanel);

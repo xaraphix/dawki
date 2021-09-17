@@ -11,11 +11,12 @@ Dwki::HeaderBarPanel::HeaderBarPanel()
     : Glib::ObjectBase("HeaderBarPanel"),
       CssClassInitializer("header-bar-panel"),
       Gtk::Widget(),
-      m_padding()
+      headerBarBox(Gtk::Orientation::HORIZONTAL)
 {
-  add_css_class("header-bar-panel");
   appTitle.set_text("Test");
-  set_expand(false);
+  headerBarBox.append(appTitle);
+  set_expand(true);
+  add_css_class("header-bar-panel");
   m_refCssProvider = CssSourceProvider::Get()->getCssSource();
   get_style_context()->add_provider(m_refCssProvider,
                                     GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
@@ -51,12 +52,7 @@ void Dwki::HeaderBarPanel::on_unmap()
   Gtk::Widget::on_unmap();
 }
 
-void Dwki::HeaderBarPanel::on_realize()
-{
-  m_padding = get_style_context()->get_padding();
-  // Call base class:
-  Gtk::Widget::on_realize();
-}
+void Dwki::HeaderBarPanel::on_realize() { Gtk::Widget::on_realize(); }
 
 void Dwki::HeaderBarPanel::on_unrealize()
 {
@@ -76,7 +72,8 @@ void Dwki::HeaderBarPanel::snapshot_vfunc(
   auto cr = snapshot->append_cairo(rect);
 
   // paint the background
-  refStyleContext->render_background(
-      cr, -m_padding.get_left(), -m_padding.get_top(), allocation.get_width(),
-      allocation.get_height());
+  //  refStyleContext->render_background(
+  //      cr, -m_padding.get_left(), -m_padding.get_top(),
+  //      allocation.get_width(),
+  /* allocation.get_height()); */
 }

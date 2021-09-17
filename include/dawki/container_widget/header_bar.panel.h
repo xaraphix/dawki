@@ -3,9 +3,11 @@
 #include "dawki/common/css_initializer.h"
 #include "dawki/container_widget/app_window_action_bar.panel.h"
 #include "dawki/container_widget/content_action_bar.panel.h"
+#include "gtkmm/box.h"
 #include "gtkmm/cssprovider.h"
 #include "gtkmm/text.h"
 #include "gtkmm/widget.h"
+#include "gtkmm/windowhandle.h"
 
 namespace Dwki
 {
@@ -15,10 +17,12 @@ class HeaderBarPanel : public CssClassInitializer, public Gtk::Widget
   HeaderBarPanel();
 
  protected:
+  Gtk::Box                      headerBarBox;
   Dwki::AppWindowActionBarPanel appWindowActionBarPanel;
   Gtk::Text                     appTitle;
   Gtk::Text                     contentPanelTitle;
   Dwki::ContentActionBarPanel   contentActionBarPanel;
+  Glib::RefPtr<Gtk::CssProvider> m_refCssProvider;
 
   void measure_vfunc(Gtk::Orientation orientation, int for_size, int& minimum,
                      int& natural, int& minimum_baseline,
@@ -29,7 +33,5 @@ class HeaderBarPanel : public CssClassInitializer, public Gtk::Widget
   void on_unrealize() override;
   void snapshot_vfunc(const Glib::RefPtr<Gtk::Snapshot>& snapshot) override;
 
-  Gtk::Border                    m_padding;
-  Glib::RefPtr<Gtk::CssProvider> m_refCssProvider;
 };
 }  // namespace Dwki

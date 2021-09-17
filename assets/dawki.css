@@ -3,6 +3,10 @@ window{
 }
 
 .header-bar-panel{
+  background: rgb(30, 30, 31);
+}
+windowhandle{
+  background: rgb(21, 21, 183);
 }
 .navigation-panel{
   background: rgb(30, 30, 31);
