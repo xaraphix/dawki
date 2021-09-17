@@ -1,0 +1,10 @@
+BasedOnStyle: Google
+IndentWidth: 2
+UseTab: Never
+BreakBeforeBraces: Linux
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+AllowAllParametersOfDeclarationOnNextLine: false
+PointerAlignment: Left
+DerivePointerAlignment: false
+
