@@ -5,22 +5,20 @@
 #include "dawki/container_widget/content_action_bar.panel.h"
 #include "gtkmm/box.h"
 #include "gtkmm/cssprovider.h"
-#include "gtkmm/text.h"
+#include "gtkmm/label.h"
 #include "gtkmm/widget.h"
 #include "gtkmm/windowhandle.h"
 
 namespace Dwki
 {
-class HeaderBarPanel : public CssClassInitializer, public Gtk::Widget
+class HeaderBarPanel : public CssClassInitializer, public Gtk::Box
 {
  public:
   HeaderBarPanel();
 
  protected:
-  Gtk::Box                      headerBarBox;
   Dwki::AppWindowActionBarPanel appWindowActionBarPanel;
-  Gtk::Text                     appTitle;
-  Gtk::Text                     contentPanelTitle;
+  Gtk::Label                     appTitle;
   Dwki::ContentActionBarPanel   contentActionBarPanel;
   Glib::RefPtr<Gtk::CssProvider> m_refCssProvider;
 
@@ -31,7 +29,6 @@ class HeaderBarPanel : public CssClassInitializer, public Gtk::Widget
   void on_unmap() override;
   void on_realize() override;
   void on_unrealize() override;
-  void snapshot_vfunc(const Glib::RefPtr<Gtk::Snapshot>& snapshot) override;
 
 };
 }  // namespace Dwki

@@ -6,18 +6,20 @@
 
 #include "dawki/common/css_source_provider.h"
 #include "dawki/logging/logging.h"
+#include "gtkmm/enums.h"
 
 Dwki::HeaderBarPanel::HeaderBarPanel()
     : Glib::ObjectBase("HeaderBarPanel"),
       CssClassInitializer("header-bar-panel"),
-      Gtk::Widget(),
-      headerBarBox(Gtk::Orientation::HORIZONTAL)
+      Gtk::Box(Gtk::Orientation::HORIZONTAL)
 {
-  appTitle.set_text("Test");
-  headerBarBox.append(appTitle);
-  set_expand(true);
-  add_css_class("header-bar-panel");
   m_refCssProvider = CssSourceProvider::Get()->getCssSource();
+  appTitle.set_text("Dawki");
+  appTitle.add_css_class("dawki-title");
+  appTitle.get_style_context()->add_provider(m_refCssProvider,
+                                    GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+  append(appTitle);
+  add_css_class("header-bar-panel");
   get_style_context()->add_provider(m_refCssProvider,
                                     GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
 }
@@ -58,22 +60,4 @@ void Dwki::HeaderBarPanel::on_unrealize()
 {
   // Call base class:
   Gtk::Widget::on_unrealize();
-}
-
-void Dwki::HeaderBarPanel::snapshot_vfunc(
-    const Glib::RefPtr<Gtk::Snapshot>& snapshot)
-{
-  const auto           allocation = get_allocation();
-  const Gdk::Rectangle rect(0, 0, allocation.get_width(),
-                            allocation.get_height());
-  auto                 refStyleContext = get_style_context();
-
-  // Create a cairo context to draw on.
-  auto cr = snapshot->append_cairo(rect);
-
-  // paint the background
-  //  refStyleContext->render_background(
-  //      cr, -m_padding.get_left(), -m_padding.get_top(),
-  //      allocation.get_width(),
-  /* allocation.get_height()); */
 }

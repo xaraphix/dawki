@@ -1,13 +1,16 @@
-window{
-  background: rgb(40, 42, 43);
+.header-bar-panel{
+  min-height: 20px;
+  padding: 0;
 }
 
-.header-bar-panel{
+.header-bar-panel .dawki-title{
+  color: #C5C5C5;
+  font-size: 19px;
+  min-width: 300px;
   background: rgb(30, 30, 31);
+
 }
-windowhandle{
-  background: rgb(21, 21, 183);
-}
+
 .navigation-panel{
   background: rgb(30, 30, 31);
   min-width: 300px;
