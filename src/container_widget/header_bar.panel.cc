@@ -1,9 +1,11 @@
 
+#include "dawki/container_widget/header_bar.panel.h"
+
 #include <gdkmm/general.h>
 #include <gtkmm/snapshot.h>
 
-#include "dawki/container_widget/header_bar.panel.h"
 #include "dawki/common/css_source_provider.h"
+#include "dawki/logging/logging.h"
 
 Dwki::HeaderBarPanel::HeaderBarPanel()
     : Glib::ObjectBase("HeaderBarPanel"),
@@ -11,7 +13,10 @@ Dwki::HeaderBarPanel::HeaderBarPanel()
       Gtk::Widget(),
       m_padding()
 {
+  add_css_class("header-bar");
   appTitle.set_text("Test");
+  set_expand(true);
+  m_refCssProvider = CssSourceProvider().getCssSource();
 }
 
 void Dwki::HeaderBarPanel::measure_vfunc(Gtk::Orientation orientation,
@@ -73,4 +78,3 @@ void Dwki::HeaderBarPanel::snapshot_vfunc(
       cr, -m_padding.get_left(), -m_padding.get_top(), allocation.get_width(),
       allocation.get_height());
 }
-

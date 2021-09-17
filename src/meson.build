@@ -1,5 +1,4 @@
 src_files = [
-  'widget/header_bar/header_bar.cc',
   'common/css_initializer.cc',
   'common/css_source_provider.cc',
   'container_widget/app_content.panel.cc',
@@ -14,8 +13,8 @@ src_files = [
   'container_widget/content_action_bar.panel.cc',
   'container_widget/header_bar.panel.cc',
   'container_widget/navigation.panel.cc',
+  'logging/logging.cc',
   'main.cc',
-  'widget/header_bar/header_bar.cc',
 ]
 
 dawki_lib = static_library(
