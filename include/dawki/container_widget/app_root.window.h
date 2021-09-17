@@ -2,9 +2,9 @@
 
 #include <gtkmm/window.h>
 
-#include "dawki/view/header_bar.panel.h"
-#include "dawki/view/app_content.panel.h"
-#include "dawki/view/navigation.panel.h"
+#include "dawki/container_widget/header_bar.panel.h"
+#include "dawki/container_widget/app_content.panel.h"
+#include "dawki/container_widget/navigation.panel.h"
 
 class AppRootWindow : public Gtk::Window 
 {
