@@ -1,13 +1,20 @@
 
 #pragma once
 
-#include "gtkmm/widget.h"
+#include "dawki/common/css_initializer.h"
+#include "gtkmm/button.h"
+
 namespace Dwki
 {
-class CloseBtn : public Gtk::Widget
+class CloseBtn
+: public CssClassInitializer
+, public Gtk::Button
 {
+public:
+  CloseBtn();
+
+protected:
 };
 
-}  // namespace Dwki
-
+} // namespace Dwki
 

@@ -1,12 +1,21 @@
 
 #pragma once
 
-#include "gtkmm/widget.h"
+#include "dawki/common/css_initializer.h"
+#include "gtkmm/button.h"
+
 namespace Dwki
 {
-class MinimizeBtn : public Gtk::Widget
+class MinimizeBtn
+: public CssClassInitializer
+, public Gtk::Button
 {
+public:
+  MinimizeBtn();
+
+protected:
 };
 
-}  // namespace Dwki
+} // namespace Dwki
+
 

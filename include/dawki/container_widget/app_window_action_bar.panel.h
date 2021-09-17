@@ -1,6 +1,7 @@
 #pragma once
 
-#include "gtkmm/widget.h"
+#include "dawki/common/css_initializer.h"
+#include "gtkmm/box.h"
 
 #include "dawki/widget/button/close.button.h"
 #include "dawki/widget/button/maximize.button.h"
@@ -8,14 +9,16 @@
 
 namespace Dwki
 {
-class AppWindowActionBarPanel : public Gtk::Widget
+class AppWindowActionBarPanel
+: public Dwki::CssClassInitializer
+, public Gtk::Box
 {
- public:
+public:
   AppWindowActionBarPanel();
 
- private:
+private:
   Dwki::MaximizeBtn maximizeBtn;
-  Dwki::CloseBtn    closeBtn;
+  Dwki::CloseBtn closeBtn;
   Dwki::MinimizeBtn minimizeBtn;
 };
-}  // namespace Dwki
+} // namespace Dwki

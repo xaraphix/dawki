@@ -5,13 +5,53 @@
 
 .header-bar-panel .dawki-title{
   color: #C5C5C5;
-  font-size: 19px;
-  min-width: 300px;
+  font-size: 23px;
+  font-family: 'JetBrains Mono';
+  padding-top: 5px;
+  padding-left: 30px;
+  min-width: 215px;
   background: rgb(30, 30, 31);
 
+}
+
+.close-btn {
+  border-radius: 50%;
+  border: 0;
+  min-width: 10px;
+  min-height: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left:15px;
+  background: rgb(167, 0, 35);
+}
+
+.maximize-btn {
+  border-radius: 50%;
+  border: 0;
+  min-width: 10px;
+  min-height: 10px;
+  margin-top: 15px;
+  margin-left:5px;
+  margin-bottom: 15px;
+  background: rgb(6, 152, 50);
+}
+
+.minimize-btn {
+  border-radius: 50%;
+  border: 0;
+  min-width: 10px;
+  min-height: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left:5px;
+  background: rgb(196, 185, 31);
 }
 
 .navigation-panel{
   background: rgb(30, 30, 31);
   min-width: 300px;
+}
+
+.app-window-action-panel{
+  background: rgb(30, 30, 31);
 }

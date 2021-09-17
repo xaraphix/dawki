@@ -20,6 +20,5 @@ class HeaderBarPanel : public CssClassInitializer, public Gtk::Box
   Dwki::AppWindowActionBarPanel  appWindowActionBarPanel;
   Gtk::Label                     appTitle;
   Dwki::ContentActionBarPanel    contentActionBarPanel;
-  Glib::RefPtr<Gtk::CssProvider> m_refCssProvider;
 };
 }  // namespace Dwki

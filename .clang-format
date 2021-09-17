@@ -1,10 +1,12 @@
-BasedOnStyle: Google
-IndentWidth: 2
-UseTab: Never
-BreakBeforeBraces: Linux
-AlignConsecutiveAssignments: true
-AlignConsecutiveDeclarations: true
-AllowAllParametersOfDeclarationOnNextLine: false
-PointerAlignment: Left
-DerivePointerAlignment: false
+BasedOnStyle: Mozilla
+Standard: Cpp11
+AlignAfterOpenBracket: false
+AlignEscapedNewlinesLeft: true
+AlwaysBreakAfterDefinitionReturnType: None
+BreakBeforeBraces: Allman
+BreakConstructorInitializersBeforeComma: false
+ColumnLimit: 100
+ConstructorInitializerAllOnOneLineOrOnePerLine: true
+ConstructorInitializerIndentWidth: 0
+IndentCaseLabels: false
 
