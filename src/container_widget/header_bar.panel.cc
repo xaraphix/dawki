@@ -22,6 +22,5 @@ Dwki::HeaderBarPanel::HeaderBarPanel()
   gtk_label_set_xalign(appTitle.gobj(), 0.0);
   append(appWindowActionBarPanel);
   append(appTitle);
-  add_css_class("header-bar-panel");
   get_style_context()->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
 }

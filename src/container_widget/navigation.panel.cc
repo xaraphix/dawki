@@ -10,7 +10,6 @@ Dwki::NavigationPanel::NavigationPanel()
       Gtk::Widget()
 
 {
-  add_css_class("navigation-panel");
   set_expand(false);
   m_refCssProvider = CssSourceProvider::Get()->getCssSource();
   get_style_context()->add_provider(m_refCssProvider,

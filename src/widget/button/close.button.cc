@@ -5,9 +5,7 @@
 Dwki::CloseBtn::CloseBtn()
 : Glib::ObjectBase("CloseBtn"), CssClassInitializer("close-btn"), Gtk::Button()
 {
-  add_css_class("close-btn");
   auto cssProvider = CssSourceProvider::Get()->getCssSource();
-  add_css_class("close-btn");
   get_style_context()->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
     
   set_action_name("Close");
