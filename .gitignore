@@ -45,4 +45,5 @@ logs/
 **/.cache
 .ccls_b
 
+.fuse*
 .vimspector.json

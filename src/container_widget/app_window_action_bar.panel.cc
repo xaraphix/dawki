@@ -10,7 +10,7 @@ Dwki::AppWindowActionBarPanel::AppWindowActionBarPanel()
 , Gtk::Box(Gtk::Orientation::HORIZONTAL)
 {
   auto cssProvider = CssSourceProvider::Get()->getCssSource();
-  add_css_class("app-window-action-panel");
+  add_css_class("app-window-action-bar-panel");
   get_style_context()->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
 
   append(closeBtn);

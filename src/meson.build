@@ -13,9 +13,9 @@ src_files = [
   'container_widget/content_action_bar.panel.cc',
   'container_widget/header_bar.panel.cc',
   'container_widget/navigation.panel.cc',
-  'widget/button/close/close.button.cc',
-  'widget/button/maximize/maximize.button.cc',
-  'widget/button/minimize/minimize.button.cc',
+  'widget/button/close.button.cc',
+  'widget/button/maximize.button.cc',
+  'widget/button/minimize.button.cc',
   'logging/logging.cc',
   'main.cc',
 ]
