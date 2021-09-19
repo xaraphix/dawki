@@ -10,7 +10,6 @@ project(
     ]
   )
 
-
 cxx = meson.get_compiler('cpp')
 
 gtk_dep = dependency('gtkmm-4.0')
@@ -31,8 +30,8 @@ inc = include_directories('include')
 
 subdir('src')
 
-
 exe = executable(
   'dawki',
   link_with: dawki_lib,
   install : true)
+
