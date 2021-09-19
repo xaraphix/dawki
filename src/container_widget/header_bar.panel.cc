@@ -13,9 +13,10 @@ Dwki::HeaderBarPanel::HeaderBarPanel()
 , CssClassInitializer("header-bar-panel")
 , Gtk::Box(Gtk::Orientation::HORIZONTAL)
 {
+  auto configParser = Dwki::DawkiConfigParser::Get();
   auto cssProvider = CssSourceProvider::Get()->getCssSource();
   appTitle.set_text("DAWKI");
-  appTitle.add_css_class(Dwki::DawkiConfigParser::Get()->GetProperty("dawki-title"));
+  appTitle.add_css_class(configParser->GetProperty<Glib::ustring>("dawki-title"));
   appTitle.get_style_context()->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
 
   gtk_label_set_xalign(appTitle.gobj(), 0.0);

@@ -20,7 +20,11 @@ public:
     return p;
   }
 
-  Glib::ustring const GetProperty(std::string const prop);
+  template<typename T>
+  T const GetProperty(std::string const prop)
+  {
+    return config.get<T>(prop);
+  }
 
 private:
   DawkiConfigParser();

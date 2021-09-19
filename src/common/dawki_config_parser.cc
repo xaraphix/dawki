@@ -15,10 +15,3 @@ Dwki::DawkiConfigParser::DawkiConfigParser()
   read_json(jsonFile, config);
 }
 
-
-Glib::ustring const
-Dwki::DawkiConfigParser::GetProperty(std::string const prop)
-{
-  return config.get<Glib::ustring>(prop);
-}
-
