@@ -1,5 +1,3 @@
-#include <gdkmm/general.h>
-#include <gtkmm/snapshot.h>
 #include <string>
 
 #include "dawki/common/css_source_provider.h"
@@ -14,6 +12,6 @@ Dwki::NavigationPanel::NavigationPanel()
       Gtk::Widget()
 {
   set_expand(false);
-  m_refCssProvider = CssSourceProvider::Get()->getCssSource();
-  get_style_context()->add_provider(m_refCssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+  cssProvider = CssSourceProvider::Get()->getCssSource();
+  get_style_context()->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
 }

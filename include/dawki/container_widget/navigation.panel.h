@@ -19,7 +19,6 @@ public:
   static constexpr auto NAVIGATION_CSS_NODE_PATH = "app.navigation.style.node";
 
 protected:
-  Gtk::Border m_padding;
-  Glib::RefPtr<Gtk::CssProvider> m_refCssProvider;
+  Glib::RefPtr<Gtk::CssProvider> cssProvider;
 };
 } // namespace Dwki

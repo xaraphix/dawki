@@ -16,6 +16,7 @@ Dwki::HeaderBarPanel::HeaderBarPanel()
 , Gtk::Box(Gtk::Orientation::HORIZONTAL)
 {
   auto cssProvider = CssSourceProvider::Get()->getCssSource();
+  set_expand(true);
   appTitle.set_text(GetProperty<Glib::ustring>(APP_TITLE_PATH));
   appTitle.add_css_class(GetProperty<Glib::ustring>(APP_TITLE_CSS_CLASS_PATH));
   appTitle.get_style_context()->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
