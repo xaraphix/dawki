@@ -1,12 +1,20 @@
+---
+Language: Cpp
 BasedOnStyle: Mozilla
 Standard: Cpp11
 AlignAfterOpenBracket: false
+PointerAlignment: Left
 AlignEscapedNewlinesLeft: true
+AlignAfterOpenBracket: Align
+AlignConsecutiveAssignments: true
 AlwaysBreakAfterDefinitionReturnType: None
 BreakBeforeBraces: Allman
 BreakConstructorInitializersBeforeComma: false
-ColumnLimit: 100
+ColumnLimit: 120
 ConstructorInitializerAllOnOneLineOrOnePerLine: true
 ConstructorInitializerIndentWidth: 0
 IndentCaseLabels: false
-
+IncludeCategories:
+  - Regex:           '^"(cc|c|h|hpp|cpp)/'
+    Priority:        1
+---

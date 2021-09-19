@@ -12,7 +12,7 @@ class AppRootWindow : public Gtk::Window
 {
 public:
   AppRootWindow();
-  static constexpr auto APP_WINDOW_NAME_PATH = "app.name";
+  static constexpr auto APP_WINDOW_NAME_PATH     = "app.name";
   static constexpr auto APP_WINDOW_CSS_NODE_PATH = "app.style.node";
 
 private:

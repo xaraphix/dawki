@@ -15,7 +15,7 @@
 
 namespace Dwki
 {
-void init_logging();
+void
+init_logging();
 
-}  // namespace Dwki
-
+} // namespace Dwki

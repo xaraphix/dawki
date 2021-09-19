@@ -7,9 +7,9 @@
 #include "glibmm/ustring.h"
 
 Dwki::NavigationPanel::NavigationPanel()
-    : Glib::ObjectBase(GetProperty<std::string>(NAVIGATION_NAME_PATH).c_str()),
-      CssClassInitializer(GetProperty<Glib::ustring>(NAVIGATION_CSS_NODE_PATH)),
-      Gtk::Widget()
+: Glib::ObjectBase(GetProperty<std::string>(NAVIGATION_NAME_PATH).c_str())
+, CssClassInitializer(GetProperty<Glib::ustring>(NAVIGATION_CSS_NODE_PATH))
+, Gtk::Widget()
 {
   set_expand(false);
   cssProvider = CssSourceProvider::Get()->getCssSource();

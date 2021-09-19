@@ -16,4 +16,3 @@ Dwki::AppContentPanel::AppContentPanel()
   get_style_context()->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
   set_expand(true);
 }
-

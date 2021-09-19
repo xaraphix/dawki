@@ -19,4 +19,3 @@ Dwki::AppWindowActionBarPanel::AppWindowActionBarPanel()
   append(minimizeBtn);
   append(maximizeBtn);
 }
-

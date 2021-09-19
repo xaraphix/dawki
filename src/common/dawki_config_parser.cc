@@ -17,4 +17,3 @@ Dwki::DawkiConfigParser::DawkiConfigParser()
   std::ifstream jsonFile(DAWKI_WIDGET_CONFIG_FILE_PATH);
   read_json(jsonFile, config);
 }
-

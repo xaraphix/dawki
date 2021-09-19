@@ -1,6 +1,6 @@
 #include "dawki/container_widget/app_root.window.h"
 
-AppRootWindow::AppRootWindow() 
+AppRootWindow::AppRootWindow()
 {
   windowHandle.set_child(headerBarPanel);
   set_titlebar(windowHandle);
@@ -10,4 +10,3 @@ AppRootWindow::AppRootWindow()
   set_child(windowContainer);
   set_default_size(800, 600);
 }
-

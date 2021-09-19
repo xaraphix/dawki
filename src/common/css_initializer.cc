@@ -9,7 +9,8 @@ using BaseObjectType = GtkWidget;
 using BaseClassType  = GtkWidgetClass;
 
 // Extra class init function.
-void class_init_function(void* g_class, void* class_data)
+void
+class_init_function(void* g_class, void* class_data)
 {
   g_return_if_fail(GTK_IS_WIDGET_CLASS(g_class));
 
@@ -20,7 +21,8 @@ void class_init_function(void* g_class, void* class_data)
 }
 
 // Extra instance init function.
-void instance_init_function(GTypeInstance* instance, void* /* g_class */)
+void
+instance_init_function(GTypeInstance* instance, void* /* g_class */)
 {
   g_return_if_fail(GTK_IS_WIDGET(instance));
 
@@ -29,11 +31,9 @@ void instance_init_function(GTypeInstance* instance, void* /* g_class */)
   // be added to a custom widget, if necessary.
 }
 
-}  // anonymous namespace
+} // anonymous namespace
 
 Dwki::CssClassInitializer::CssClassInitializer(const Glib::ustring& css_name)
-    : Glib::ExtraClassInit(class_init_function, &m_css_name,
-                           instance_init_function),
-      m_css_name(css_name)
+: Glib::ExtraClassInit(class_init_function, &m_css_name, instance_init_function), m_css_name(css_name)
 {
 }

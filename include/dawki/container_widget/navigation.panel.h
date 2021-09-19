@@ -15,7 +15,7 @@ class NavigationPanel
 {
 public:
   NavigationPanel();
-  static constexpr auto NAVIGATION_NAME_PATH = "app.navigation.name";
+  static constexpr auto NAVIGATION_NAME_PATH     = "app.navigation.name";
   static constexpr auto NAVIGATION_CSS_NODE_PATH = "app.navigation.style.node";
 
 protected:

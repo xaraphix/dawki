@@ -5,6 +5,6 @@ namespace Dwki
 class DawkiStore
 {
   /* make store singleton */
- public:
+public:
 };
-}  // namespace Dwki
+} // namespace Dwki

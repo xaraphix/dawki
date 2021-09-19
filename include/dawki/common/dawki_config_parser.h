@@ -11,11 +11,10 @@ namespace Dwki
 class DawkiConfigParser
 {
 public:
-  DawkiConfigParser(DawkiConfigParser const&) = delete;
+  DawkiConfigParser(DawkiConfigParser const&)            = delete;
   DawkiConfigParser& operator-(DawkiConfigParser const&) = delete;
 
-  static constexpr auto DAWKI_WIDGET_CONFIG_FILE_PATH =
-    "/home/suyash/Code/dawki/dawki_widgets_config.json";
+  static constexpr auto DAWKI_WIDGET_CONFIG_FILE_PATH = "/home/suyash/Code/dawki/dawki_widgets_config.json";
 
   static std::shared_ptr<DawkiConfigParser> Get()
   {
@@ -35,7 +34,8 @@ private:
 };
 }
 
-namespace Dwki {
-  template<typename T>
-  const auto GetProperty = DawkiConfigParser::GetProperty<T>;
+namespace Dwki
+{
+template<typename T>
+const auto GetProperty = DawkiConfigParser::GetProperty<T>;
 }

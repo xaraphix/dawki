@@ -8,7 +8,6 @@
 #include "dawki/widget/button/minimize.button.h"
 #include <string_view>
 
-
 namespace Dwki
 {
 class AppWindowActionBarPanel
@@ -18,9 +17,8 @@ class AppWindowActionBarPanel
 public:
   AppWindowActionBarPanel();
 
-  static constexpr auto APP_WINDOW_ACTION_BAR_NAME_PATH = "app.headerBar.windowActionBar.name";
-  static constexpr auto APP_WINDOW_ACTION_BAR_CSS_NODE_PATH =
-    "app.headerBar.windowActionBar.style.node";
+  static constexpr auto APP_WINDOW_ACTION_BAR_NAME_PATH     = "app.headerBar.windowActionBar.name";
+  static constexpr auto APP_WINDOW_ACTION_BAR_CSS_NODE_PATH = "app.headerBar.windowActionBar.style.node";
 
 private:
   Dwki::MaximizeBtn maximizeBtn;
