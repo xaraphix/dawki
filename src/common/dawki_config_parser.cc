@@ -3,15 +3,18 @@
 #include <boost/property_tree/ptree_fwd.hpp>
 #include <string>
 
+#include "dawki/constant/gui_constant.h"
 #include "dawki/common/dawki_config_parser.h"
 #include "dawki/logging/logging.h"
 #include "glibmm/ustring.h"
+
+boost::property_tree::ptree Dwki::DawkiConfigParser::config = boost::property_tree::ptree{};
 
 Dwki::DawkiConfigParser::DawkiConfigParser()
 {
   using boost::property_tree::ptree;
   using boost::property_tree::read_json;
-  std::ifstream jsonFile("/home/suyash/Code/dawki/dawki_widgets_config.json");
+  std::ifstream jsonFile(DwkiGuiConst::DAWKI_WIDGET_CONFIG_FILE_PATH);
   read_json(jsonFile, config);
 }
 

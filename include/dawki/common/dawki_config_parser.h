@@ -21,13 +21,18 @@ public:
   }
 
   template<typename T>
-  T const GetProperty(std::string const prop)
+  static T const GetProperty(std::string prop)
   {
     return config.get<T>(prop);
   }
 
 private:
   DawkiConfigParser();
-  boost::property_tree::ptree config;
+  static boost::property_tree::ptree config;
 };
+}
+
+namespace Dwki {
+  template<typename T>
+  const auto GetProperty = DawkiConfigParser::GetProperty<T>;
 }

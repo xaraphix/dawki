@@ -1,3 +1,61 @@
 {
-  "dawki-title": "dawki-title"
+  "app":{
+    "title": {
+      "name": "DAWKI",
+      "style": {
+        "class": "dawki-title",
+        "xAlign": 0
+      }
+    },
+    "content": {
+      "name": "DawkiContentPanel",
+      "style": {
+        "node": "dawki-content"
+      }
+    },
+    "headerBar": {
+      "name": "DawkiHeaderBarPanel",
+      "style": {
+        "node": "dawki-header-bar"
+      },
+      "windowActionBar": {
+        "name": "DawkiWindowActionBar",
+        "style": {
+          "node": "dawki-window-action-bar"
+        },
+        "closeBtn": {
+          "name": "DawkiCloseBtn",
+          "style": {
+            "node": "dawki-close-btn"
+          }
+        },
+        "minBtn": {
+          "name": "DawkiMinBtn",
+          "style": {
+            "node": "dawki-min-btn"
+          }
+        },
+        "maxBtn": {
+          "name": "DawkiMaxBtn",
+          "style": {
+            "node": "dawki-max-btn"
+          }
+        }
+
+
+      },
+      "contentActionBar": {
+        "name": "DawkiContentActionBar",
+        "style": {
+          "node": "dawki-content-action-bar-panel"
+        }
+      }
+    },
+    "navigation": {
+      "name": "DawkiNavigationPanel",
+      "style": {
+        "node": "dawki-navigation"
+      }
+    }
+  }
 }

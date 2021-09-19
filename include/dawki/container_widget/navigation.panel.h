@@ -13,15 +13,6 @@ class NavigationPanel : public CssClassInitializer, public Gtk::Widget
   NavigationPanel();
 
  protected:
-  void measure_vfunc(Gtk::Orientation orientation, int for_size, int& minimum,
-                     int& natural, int& minimum_baseline,
-                     int& natural_baseline) const override;
-  void on_map() override;
-  void on_unmap() override;
-  void on_realize() override;
-  void on_unrealize() override;
-  void snapshot_vfunc(const Glib::RefPtr<Gtk::Snapshot>& snapshot) override;
-
   Gtk::Border                    m_padding;
   Glib::RefPtr<Gtk::CssProvider> m_refCssProvider;
 };

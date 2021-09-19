@@ -1,4 +1,4 @@
-close-btn {
+dawki-close-btn {
   border-radius: 50%;
   border: 0;
   min-width: 10px;
@@ -8,7 +8,7 @@ close-btn {
   margin-left: 15px;
   background: #a70023; }
 
-minimize-btn {
+dawki-min-btn {
   border-radius: 50%;
   border: 0;
   min-width: 10px;
@@ -18,7 +18,7 @@ minimize-btn {
   margin-left: 5px;
   background: #c4b91f; }
 
-maximize-btn {
+dawki-max-btn {
   border-radius: 50%;
   border: 0;
   min-width: 10px;
@@ -28,10 +28,10 @@ maximize-btn {
   margin-bottom: 15px;
   background: #069832; }
 
-header-bar-panel {
+dawki-header-bar {
   min-height: 20px;
   padding: 0; }
-  header-bar-panel .dawki-title {
+  dawki-header-bar .dawki-title {
     color: #C5C5C5;
     font-size: 23px;
     font-family: 'JetBrains Mono';
@@ -40,12 +40,12 @@ header-bar-panel {
     min-width: 215px;
     background: #1e1e1f; }
 
-navigation-panel {
+dawki-navigation {
   min-width: 300px;
   padding: 0;
   background: #1e1e1f; }
 
-app-window-action-bar-panel {
+dawki-window-action-bar {
   background: #1e1e1f; }
 
 window {
