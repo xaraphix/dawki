@@ -16,7 +16,7 @@ dawki-min-btn {
   margin-top: 15px;
   margin-bottom: 15px;
   margin-left: 5px;
-  background: #c4b91f; }
+  background: #c4691f; }
 
 dawki-max-btn {
   border-radius: 50%;
@@ -33,7 +33,7 @@ dawki-header-bar {
   padding: 0; }
   dawki-header-bar .dawki-title {
     color: #C5C5C5;
-    font-size: 23px;
+    font-size: 18px;
     font-family: 'JetBrains Mono';
     padding-top: 5px;
     padding-left: 30px;

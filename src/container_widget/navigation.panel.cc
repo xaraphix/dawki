@@ -5,12 +5,12 @@
 #include "dawki/common/css_source_provider.h"
 #include "dawki/common/dawki_config_parser.h"
 #include "dawki/container_widget/navigation.panel.h"
-#include "dawki/constant/gui_constant.h"
+
 #include "glibmm/ustring.h"
 
 Dwki::NavigationPanel::NavigationPanel()
-    : Glib::ObjectBase(GetProperty<std::string>(DwkiGuiConst::NAVIGATION_NAME_PATH).c_str()),
-      CssClassInitializer(GetProperty<Glib::ustring>(DwkiGuiConst::NAVIGATION_CSS_NODE_PATH)),
+    : Glib::ObjectBase(GetProperty<std::string>(NAVIGATION_NAME_PATH).c_str()),
+      CssClassInitializer(GetProperty<Glib::ustring>(NAVIGATION_CSS_NODE_PATH)),
       Gtk::Widget()
 {
   set_expand(false);

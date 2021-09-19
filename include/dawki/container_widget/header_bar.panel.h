@@ -9,16 +9,26 @@
 #include "gtkmm/widget.h"
 #include "gtkmm/windowhandle.h"
 
+#include <string_view>
+
 namespace Dwki
 {
-class HeaderBarPanel : public CssClassInitializer, public Gtk::Box
+class HeaderBarPanel
+: public CssClassInitializer
+, public Gtk::Box
 {
- public:
+public:
   HeaderBarPanel();
 
- protected:
-  Dwki::AppWindowActionBarPanel  appWindowActionBarPanel;
-  Gtk::Label                     appTitle;
-  Dwki::ContentActionBarPanel    contentActionBarPanel;
+  static constexpr auto HEADER_BAR_NAME_PATH = "app.headerBar.name";
+  static constexpr auto HEADER_BAR_CSS_NODE_PATH = "app.headerBar.style.node";
+  static constexpr auto APP_TITLE_PATH = "app.title.name";
+  static constexpr auto APP_TITLE_CSS_CLASS_PATH = "app.title.style.class";
+  static constexpr auto APP_TITLE_XALIGN_PATH = "app.title.style.xAlign";
+
+protected:
+  Dwki::AppWindowActionBarPanel appWindowActionBarPanel;
+  Gtk::Label appTitle;
+  Dwki::ContentActionBarPanel contentActionBarPanel;
 };
-}  // namespace Dwki
+} // namespace Dwki

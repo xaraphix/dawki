@@ -46,5 +46,5 @@ logs/
 .ccls_b
 
 .fuse*
-.map
+assets/*.map
 .vimspector.json

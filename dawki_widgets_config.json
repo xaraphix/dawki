@@ -1,7 +1,7 @@
 {
   "app":{
     "title": {
-      "name": "DAWKI",
+      "name": "Dawki",
       "style": {
         "class": "dawki-title",
         "xAlign": 0
@@ -41,8 +41,6 @@
             "node": "dawki-max-btn"
           }
         }
-
-
       },
       "contentActionBar": {
         "name": "DawkiContentActionBar",

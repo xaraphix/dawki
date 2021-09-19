@@ -4,12 +4,12 @@
 #include "gtkmm/button.h"
 #include "dawki/common/css_source_provider.h"
 #include "dawki/common/dawki_config_parser.h"
-#include "dawki/constant/gui_constant.h"
+
 #include "glibmm/ustring.h"
 
 Dwki::CloseBtn::CloseBtn()
-     : Glib::ObjectBase(GetProperty<std::string>(DwkiGuiConst::WINDOW_CLOSE_ACTION_NAME_PATH).c_str()),
-      CssClassInitializer(GetProperty<Glib::ustring>(DwkiGuiConst::WINDOW_CLOSE_ACTION_CSS_NODE_PATH)),
+     : Glib::ObjectBase(GetProperty<std::string>(WINDOW_CLOSE_ACTION_NAME_PATH).c_str()),
+      CssClassInitializer(GetProperty<Glib::ustring>(WINDOW_CLOSE_ACTION_CSS_NODE_PATH)),
       Gtk::Button()
 {
   auto cssProvider = CssSourceProvider::Get()->getCssSource();
