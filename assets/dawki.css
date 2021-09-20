@@ -1,41 +1,28 @@
-dawki-close-btn {
+.window-action-btn, dawki-max-btn, dawki-min-btn, dawki-close-btn {
   background-position: center;
-  cursor: pointer;
   margin: 0;
   margin-right: 4px;
   min-width: 15px;
   background-size: 15px;
-  background-image: url("/assets/icons/circle.svg");
-  filter: invert(17%) sepia(75%) saturate(2905%) hue-rotate(331deg) brightness(83%) contrast(102%);
   background-repeat: no-repeat; }
+
+dawki-close-btn {
+  background-image: url("/assets/icons/circle.svg");
+  filter: invert(17%) sepia(75%) saturate(2905%) hue-rotate(331deg) brightness(83%) contrast(102%); }
 
 dawki-close-btn:hover {
   background-image: url("/assets/icons/window_close.svg"); }
 
 dawki-min-btn {
-  background-position: center;
-  cursor: pointer;
-  margin: 0;
-  margin-right: 4px;
-  min-width: 15px;
-  background-size: 15px;
   background-image: url("/assets/icons/circle.svg");
-  filter: invert(80%) sepia(18%) saturate(6735%) hue-rotate(4deg) brightness(94%) contrast(91%);
-  background-repeat: no-repeat; }
+  filter: invert(80%) sepia(18%) saturate(6735%) hue-rotate(4deg) brightness(94%) contrast(91%); }
 
 dawki-min-btn:hover {
   background-image: url("/assets/icons/window_minimize.svg"); }
 
 dawki-max-btn {
-  background-position: center;
-  cursor: pointer;
-  margin: 0;
-  margin-right: 4px;
-  min-width: 15px;
-  background-size: 15px;
   background-image: url("/assets/icons/circle.svg");
-  filter: invert(51%) sepia(66%) saturate(577%) hue-rotate(94deg) brightness(89%) contrast(92%);
-  background-repeat: no-repeat; }
+  filter: invert(51%) sepia(66%) saturate(577%) hue-rotate(94deg) brightness(89%) contrast(92%); }
 
 dawki-max-btn:hover {
   background-image: url("/assets/icons/window_maximize.svg"); }
@@ -46,17 +33,26 @@ dawki-header-bar {
     color: #C5C5C5;
     font-size: 18px;
     font-family: 'JetBrains Mono';
-    padding-top: 5px;
-    padding-left: 30px; }
-    dawki-header-bar .dawki-title:hover {
-      color: red; }
+    margin-top: 5px;
+    margin-left: 30px; }
   dawki-header-bar .dawki-window-drag-handle {
     margin-top: 5px;
-    margin-left: 20px; }
+    margin-left: 20px;
+    background-position: center;
+    background-image: url("/assets/icons/drag.svg"); }
 
 dawki-navigation {
   min-width: 300px;
-  padding: 0; }
+  padding: 40px 10px; }
+
+.nav-item, .docker-images-nav-label, .docker-containers-nav-label {
+  font-size: 18px;
+  font-family: 'JetBrains Mono';
+  min-width: 130px;
+  text-justify: end;
+  padding: 5px 10px 5px 20px; }
+  .nav-item:hover, .docker-images-nav-label:hover, .docker-containers-nav-label:hover {
+    background: #032058; }
 
 dawki-window-action-bar {
   min-height: 10px;

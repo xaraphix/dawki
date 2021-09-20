@@ -1,13 +1,7 @@
 dawki-close-btn {
-  background-position: center;
- cursor: pointer;
-  margin: 0;
-  margin-right: 4px;
-  min-width: 15px;
-  background-size: 15px;
+  @extend .window-action-btn;
   background-image: url("/assets/icons/circle.svg");
   filter:invert(17%) sepia(75%) saturate(2905%) hue-rotate(331deg) brightness(83%) contrast(102%); 
-  background-repeat: no-repeat;
 }
 
 dawki-close-btn:hover {

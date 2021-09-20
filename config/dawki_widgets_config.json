@@ -1,7 +1,7 @@
 {
   "app": {
     "domain": "in.suyashsingh",
-    "style":{
+    "style": {
       "cssPath": "/assets/dawki.css"
     },
     "title": {
@@ -27,7 +27,7 @@
         "size": 20,
         "style": {
           "cssClass": "dawki-window-drag-handle"
-        } 
+        }
       },
       "windowActionBar": {
         "name": "DawkiWindowActionBar",
@@ -64,6 +64,32 @@
       "name": "DawkiNavigationPanel",
       "style": {
         "node": "dawki-navigation"
+      },
+      "dockerContainers": {
+        "icon": {
+          "style": {
+            "cssClass": "docker-containers-nav-icon"
+          }
+        },
+        "label": {
+          "name": "CONTAINERS",
+          "style": {
+            "cssClass": "docker-containers-nav-label"
+          }
+        }
+      },
+      "dockerImages": {
+        "icon": {
+          "style": {
+            "cssClass": "docker-containers-nav-icon"
+          }
+        },
+        "label": {
+          "name": "IMAGES",
+          "style": {
+            "cssClass": "docker-containers-nav-label"
+          }
+        }
       }
     }
   }

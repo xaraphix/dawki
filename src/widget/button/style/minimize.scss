@@ -1,13 +1,7 @@
 dawki-min-btn {
-  background-position: center;
-  cursor: pointer;
-  margin: 0;
-  margin-right: 4px;
-  min-width: 15px;
-  background-size: 15px;
+  @extend .window-action-btn;
   background-image: url("/assets/icons/circle.svg");
   filter: invert(80%) sepia(18%) saturate(6735%) hue-rotate(4deg) brightness(94%) contrast(91%);
-  background-repeat: no-repeat;
 }
 
 dawki-min-btn:hover {

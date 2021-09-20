@@ -5,16 +5,15 @@ dawki-header-bar{
     color: #C5C5C5;
     font-size: 18px;
     font-family: 'JetBrains Mono';
-    padding-top: 5px;
-    padding-left: 30px;
-    &:hover {
-      color: rgb(255,0,0);
-    }
+    margin-top: 5px;
+    margin-left: 30px;
   }
 
   .dawki-window-drag-handle{
     margin-top:5px;
     margin-left:20px;
+    background-position: center;
+    background-image: url("/assets/icons/drag.svg");
   }
 
 }

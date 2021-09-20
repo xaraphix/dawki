@@ -30,11 +30,9 @@ Dwki::HeaderBarPanel::HeaderBarPanel()
   appTitle.add_css_class(GetProperty<Glib::ustring>(APP_TITLE_CSS_CLASS_PATH));
   appTitle.get_style_context()->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
   gtk_label_set_xalign(appTitle.gobj(), GetProperty<float>(APP_TITLE_XALIGN_PATH));
-  dragHandle.set_from_resource(GetProperty<std::string>(DRAG_HANDLE_ICON_PATH));
-  dragHandle.set_pixel_size(GetProperty<int>(DRAG_HANDLE_ICON_SIZE));
+
   dragHandle.add_css_class(GetProperty<std::string>(DRAG_HANDLE_ICON_CSS_CLASS));
   dragHandle.get_style_context()->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
-  appWindowActionBarPanel.set_expand(false);
 
   append(appWindowActionBarPanel);
   append(appTitle);

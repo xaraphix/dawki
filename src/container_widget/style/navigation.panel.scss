@@ -1,4 +1,36 @@
-dawki-navigation{
+dawki-navigation {
   min-width: 300px;
-  padding: 0;
+  padding: 40px 10px;
+
 }
+
+  .nav-item {
+    font-size: 18px;
+    font-family: 'JetBrains Mono';
+    min-width: 130px;
+    text-justify: end;
+    padding: 5px 10px 5px 20px;
+    &:hover {
+      background: rgb(3, 32, 88);
+    }
+  }
+
+  .icon {
+  }
+
+  .docker-containers-nav-icon {
+    @extend .icon;
+  }
+
+  .docker-containers-nav-label {
+    @extend .nav-item;
+  }
+
+  .docker-images-nav-icon {
+    @extend .icon;
+  }
+
+  .docker-images-nav-label {
+    @extend .nav-item;
+  }
+
