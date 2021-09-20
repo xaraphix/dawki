@@ -30,8 +30,7 @@ dawki-max-btn {
 
 dawki-header-bar {
   min-height: 20px;
-  padding: 0;
-  background: #1e1e1f; }
+  padding: 0; }
   dawki-header-bar .dawki-title {
     color: #C5C5C5;
     font-size: 18px;
@@ -44,16 +43,9 @@ dawki-header-bar {
 
 dawki-navigation {
   min-width: 300px;
-  padding: 0;
-  background: #1e1e1f; }
-
-dawki-window-action-bar {
-  background: #1e1e1f; }
-
-dawki-content {
-  background: #1e1e1f; }
+  padding: 0; }
 
 window {
-  filter: blur(5px); }
+  background: #1e2225; }
 
 /*# sourceMappingURL=dawki.css.map */

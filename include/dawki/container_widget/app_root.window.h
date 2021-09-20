@@ -8,7 +8,8 @@
 #include "gtkmm/windowhandle.h"
 
 #include <string_view>
-
+namespace Dwki
+{
 class AppRootWindow : public Gtk::Window
 {
 public:
@@ -23,3 +24,4 @@ private:
   Dwki::NavigationPanel navigationPanel;
   Dwki::AppContentPanel contentPanel;
 };
+}
