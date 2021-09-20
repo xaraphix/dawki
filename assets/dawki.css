@@ -1,35 +1,46 @@
 dawki-close-btn {
-  border-radius: 50%;
-  border: 0;
-  min-width: 10px;
-  min-height: 10px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-  background: #a70023; }
+  background-position: center;
+  cursor: pointer;
+  margin: 0;
+  margin-right: 4px;
+  min-width: 15px;
+  background-size: 15px;
+  background-image: url("/assets/icons/circle.svg");
+  filter: invert(17%) sepia(75%) saturate(2905%) hue-rotate(331deg) brightness(83%) contrast(102%);
+  background-repeat: no-repeat; }
+
+dawki-close-btn:hover {
+  background-image: url("/assets/icons/window_close.svg"); }
 
 dawki-min-btn {
-  border-radius: 50%;
-  border: 0;
-  min-width: 10px;
-  min-height: 10px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 5px;
-  background: #c4691f; }
+  background-position: center;
+  cursor: pointer;
+  margin: 0;
+  margin-right: 4px;
+  min-width: 15px;
+  background-size: 15px;
+  background-image: url("/assets/icons/circle.svg");
+  filter: invert(80%) sepia(18%) saturate(6735%) hue-rotate(4deg) brightness(94%) contrast(91%);
+  background-repeat: no-repeat; }
+
+dawki-min-btn:hover {
+  background-image: url("/assets/icons/window_minimize.svg"); }
 
 dawki-max-btn {
-  border-radius: 50%;
-  border: 0;
-  min-width: 10px;
-  min-height: 10px;
-  margin-top: 15px;
-  margin-left: 5px;
-  margin-bottom: 15px;
-  background: #069832; }
+  background-position: center;
+  cursor: pointer;
+  margin: 0;
+  margin-right: 4px;
+  min-width: 15px;
+  background-size: 15px;
+  background-image: url("/assets/icons/circle.svg");
+  filter: invert(51%) sepia(66%) saturate(577%) hue-rotate(94deg) brightness(89%) contrast(92%);
+  background-repeat: no-repeat; }
+
+dawki-max-btn:hover {
+  background-image: url("/assets/icons/window_maximize.svg"); }
 
 dawki-header-bar {
-  min-height: 20px;
   padding: 0; }
   dawki-header-bar .dawki-title {
     color: #C5C5C5;
@@ -37,6 +48,8 @@ dawki-header-bar {
     font-family: 'JetBrains Mono';
     padding-top: 5px;
     padding-left: 30px; }
+    dawki-header-bar .dawki-title:hover {
+      color: red; }
   dawki-header-bar .dawki-window-drag-handle {
     margin-top: 5px;
     margin-left: 20px; }
@@ -45,7 +58,12 @@ dawki-navigation {
   min-width: 300px;
   padding: 0; }
 
+dawki-window-action-bar {
+  min-height: 10px;
+  margin-left: 10px; }
+
 window {
-  background: #1e2225; }
+  background: #1e2225;
+  border-radius: 8px; }
 
 /*# sourceMappingURL=dawki.css.map */

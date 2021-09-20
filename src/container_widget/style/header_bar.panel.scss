@@ -1,5 +1,4 @@
 dawki-header-bar{
-  min-height: 20px;
   padding: 0;
 
   .dawki-title{
@@ -8,6 +7,9 @@ dawki-header-bar{
     font-family: 'JetBrains Mono';
     padding-top: 5px;
     padding-left: 30px;
+    &:hover {
+      color: rgb(255,0,0);
+    }
   }
 
   .dawki-window-drag-handle{

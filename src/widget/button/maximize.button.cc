@@ -17,6 +17,4 @@ Dwki::MaximizeBtn::MaximizeBtn()
 {
   auto cssProvider = CssSourceProvider::Get()->getCssSource();
   get_style_context()->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
-
-  set_action_name("Maximize");
 }

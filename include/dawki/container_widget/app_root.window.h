@@ -19,8 +19,10 @@ public:
 
 private:
   Gtk::WindowHandle windowHandle;
-  Dwki::HeaderBarPanel headerBarPanel;
-  Gtk::Box windowContainer;
+  Dwki::HeaderBarPanel headerBar;
+  Gtk::Box appHeaderContainer;
+  Gtk::Box appBodyContainer;
+  Gtk::Box appContainer;
   Dwki::NavigationPanel navigationPanel;
   Dwki::AppContentPanel contentPanel;
 };

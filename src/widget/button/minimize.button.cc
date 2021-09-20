@@ -1,6 +1,7 @@
 #include "dawki/widget/button/minimize.button.h"
 #include "dawki/common/css_initializer.h"
 #include "dawki/common/css_source_provider.h"
+#include "gdkmm/cursor.h"
 #include "glibmm/objectbase.h"
 #include "gtkmm/button.h"
 
@@ -16,6 +17,4 @@ Dwki::MinimizeBtn::MinimizeBtn()
 {
   auto cssProvider = CssSourceProvider::Get()->getCssSource();
   get_style_context()->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
-
-  set_action_name("Minimize");
 }

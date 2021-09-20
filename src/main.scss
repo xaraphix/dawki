@@ -1,6 +1,7 @@
-@import './widget/widget.scss';
-@import './container_widget/container_widget.scss';
+@import "./widget/widget.scss";
+@import "./container_widget/container_widget.scss";
 
-window{
-background: rgb(30, 34, 37);
+window {
+  background: rgb(30, 34, 37);
+  border-radius: 8px;
 }

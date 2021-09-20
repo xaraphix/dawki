@@ -14,7 +14,8 @@ Dwki::AppWindowActionBarPanel::AppWindowActionBarPanel()
 {
   auto cssProvider = CssSourceProvider::Get()->getCssSource();
   get_style_context()->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
-
+  closeBtn.set_size_request(10, 10);
+  closeBtn.set_expand(false);
   append(closeBtn);
   append(minimizeBtn);
   append(maximizeBtn);

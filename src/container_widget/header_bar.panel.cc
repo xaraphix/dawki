@@ -4,6 +4,7 @@
 #include "giomm/resource.h"
 #include "glibmm/ustring.h"
 #include "gtkmm/enums.h"
+#include "gtkmm/settings.h"
 #include "gtkmm/snapshot.h"
 #include <giomm/resource.h>
 #include <string>
@@ -14,6 +15,7 @@
 #include "dawki/container_widget/header_bar.panel.h"
 #include "dawki/logging/logging.h"
 #include "gtk/gtklabel.h"
+#include "gtkmm/widget.h"
 
 Dwki::HeaderBarPanel::HeaderBarPanel()
 : Glib::ObjectBase(GetProperty<std::string>(HEADER_BAR_NAME_PATH).c_str())
@@ -32,6 +34,7 @@ Dwki::HeaderBarPanel::HeaderBarPanel()
   dragHandle.set_pixel_size(GetProperty<int>(DRAG_HANDLE_ICON_SIZE));
   dragHandle.add_css_class(GetProperty<std::string>(DRAG_HANDLE_ICON_CSS_CLASS));
   dragHandle.get_style_context()->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+  appWindowActionBarPanel.set_expand(false);
 
   append(appWindowActionBarPanel);
   append(appTitle);

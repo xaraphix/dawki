@@ -5,6 +5,7 @@
 #include "gtkmm/button.h"
 
 #include "glibmm/ustring.h"
+#include "gtkmm/label.h"
 
 Dwki::CloseBtn::CloseBtn()
 : Glib::ObjectBase(GetProperty<std::string>(WINDOW_CLOSE_ACTION_NAME_PATH).c_str())
@@ -13,6 +14,4 @@ Dwki::CloseBtn::CloseBtn()
 {
   auto cssProvider = CssSourceProvider::Get()->getCssSource();
   get_style_context()->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
-
-  set_action_name("Close");
 }

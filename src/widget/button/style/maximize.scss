@@ -1,12 +1,15 @@
-
 dawki-max-btn {
-  border-radius: 50%;
-  border: 0;
-  min-width: 10px;
-  min-height: 10px;
-  margin-top: 15px;
-  margin-left:5px;
-  margin-bottom: 15px;
-  background: rgb(6, 152, 50);
+  background-position: center;
+  cursor: pointer;
+  margin: 0;
+  margin-right: 4px;
+  min-width: 15px;
+  background-size: 15px;
+  background-image: url("/assets/icons/circle.svg");
+  filter: invert(51%) sepia(66%) saturate(577%) hue-rotate(94deg) brightness(89%) contrast(92%); 
+  background-repeat: no-repeat;
 }
 
+dawki-max-btn:hover {
+  background-image: url("/assets/icons/window_maximize.svg");
+}

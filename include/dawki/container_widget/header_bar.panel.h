@@ -7,8 +7,6 @@
 #include "gtkmm/cssprovider.h"
 #include "gtkmm/image.h"
 #include "gtkmm/label.h"
-#include "gtkmm/picture.h"
-#include "gtkmm/widget.h"
 
 #include <string_view>
 
