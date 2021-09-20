@@ -39,8 +39,8 @@ dawki-header-bar {
     padding-top: 5px;
     padding-left: 30px; }
   dawki-header-bar .dawki-window-drag-handle {
-    color: #37ffff;
-    background-color: #6199ff; }
+    margin-top: 5px;
+    margin-left: 20px; }
 
 dawki-navigation {
   min-width: 300px;

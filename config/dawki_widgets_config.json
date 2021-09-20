@@ -24,8 +24,9 @@
       },
       "dragHandle": {
         "icon": "/assets/icons/drag.svg",
+        "size": 20,
         "style": {
-          "class": "dawki-window-drag-handle"
+          "cssClass": "dawki-window-drag-handle"
         } 
       },
       "windowActionBar": {
