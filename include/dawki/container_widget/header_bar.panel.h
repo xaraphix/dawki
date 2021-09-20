@@ -3,10 +3,10 @@
 #include "dawki/common/css_initializer.h"
 #include "dawki/container_widget/app_window_action_bar.panel.h"
 #include "dawki/container_widget/content_action_bar.panel.h"
-#include "gtkmm/picture.h"
 #include "gtkmm/box.h"
 #include "gtkmm/cssprovider.h"
 #include "gtkmm/label.h"
+#include "gtkmm/picture.h"
 #include "gtkmm/widget.h"
 
 #include <string_view>
@@ -25,7 +25,7 @@ public:
   static constexpr auto APP_TITLE_PATH           = "app.title.name";
   static constexpr auto APP_TITLE_CSS_CLASS_PATH = "app.title.style.class";
   static constexpr auto APP_TITLE_XALIGN_PATH    = "app.title.style.xAlign";
-  static constexpr auto DRAG_HANDLE_ICON_PATH    = "app.headerBar.dragHandleIcon";
+  static constexpr auto DRAG_HANDLE_ICON_PATH    = "app.headerBar.dragHandle.icon";
 
 protected:
   Dwki::AppWindowActionBarPanel appWindowActionBarPanel;

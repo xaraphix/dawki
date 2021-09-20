@@ -2,5 +2,6 @@
 <gresources>
   <gresource prefix="/assets/">
   <file compressed="true">icons/drag.svg</file>
+  <file compressed="true">dawki.css</file>
 </gresource>
 </gresources>

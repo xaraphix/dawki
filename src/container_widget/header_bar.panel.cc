@@ -1,9 +1,9 @@
 #include "gdkmm/general.h"
+#include "gio/gio.h"
+#include "giomm/resource.h"
 #include "glibmm/ustring.h"
 #include "gtkmm/snapshot.h"
 #include <giomm/resource.h>
-#include "gio/gio.h"
-#include "giomm/resource.h"
 #include <string>
 
 #include "dawki/common/css_source_provider.h"

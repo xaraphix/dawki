@@ -20,6 +20,7 @@ public:
   }
 
   Glib::RefPtr<Gtk::CssProvider> getCssSource();
+  static constexpr auto CSS_RESOURCE_PATH = "app.style.cssPath";
 
 private:
   CssSourceProvider();

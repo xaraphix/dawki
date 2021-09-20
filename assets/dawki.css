@@ -37,9 +37,10 @@ dawki-header-bar {
     font-size: 18px;
     font-family: 'JetBrains Mono';
     padding-top: 5px;
-    padding-left: 30px;
-    min-width: 215px;
-    background: #1e1e1f; }
+    padding-left: 30px; }
+  dawki-header-bar .dawki-window-drag-handle {
+    color: #37ffff;
+    background-color: #6199ff; }
 
 dawki-navigation {
   min-width: 300px;

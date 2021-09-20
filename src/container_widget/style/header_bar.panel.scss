@@ -9,8 +9,11 @@ dawki-header-bar{
     font-family: 'JetBrains Mono';
     padding-top: 5px;
     padding-left: 30px;
-    min-width: 215px;
-    background: rgb(30, 30, 31);
+  }
+
+  .dawki-window-drag-handle{
+    color: rgb(55,255,255);
+     background-color: #6199ff;
   }
 
 }

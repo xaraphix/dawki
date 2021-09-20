@@ -1,6 +1,9 @@
 {
-  "app":{
+  "app": {
     "domain": "in.suyashsingh",
+    "style":{
+      "cssPath": "/assets/dawki.css"
+    },
     "title": {
       "name": "Dawki",
       "style": {
@@ -19,7 +22,12 @@
       "style": {
         "node": "dawki-header-bar"
       },
-      "dragHandleIcon": "/assets/icons/drag.svg",
+      "dragHandle": {
+        "icon": "/assets/icons/drag.svg",
+        "style": {
+          "class": "dawki-window-drag-handle"
+        } 
+      },
       "windowActionBar": {
         "name": "DawkiWindowActionBar",
         "style": {
