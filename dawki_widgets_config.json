@@ -19,6 +19,7 @@
       "style": {
         "node": "dawki-header-bar"
       },
+      "dragHandleIcon": "/assets/icons/drag.svg",
       "windowActionBar": {
         "name": "DawkiWindowActionBar",
         "style": {

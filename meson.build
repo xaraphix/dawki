@@ -18,8 +18,9 @@ boost_dep = [
     cxx.find_library('boost_thread'),
     cxx.find_library('boost_log'),
 ]
-
+gio = dependency('gio-2.0')
 dawki_deps = [
+  gio,
   gtk_dep,
   thread_dep,
   boost_dep
@@ -27,11 +28,21 @@ dawki_deps = [
 
 
 inc = include_directories('include')
+gnome = import('gnome')
 
 subdir('src')
 
+gresources = gnome.compile_resources(
+    'dawki-resourcess',
+    'assets/gresources.xml',
+    source_dir: ['assets'],
+)
+
 exe = executable(
-  'dawki',
+  'dawki', 
+  gresources,
   link_with: dawki_lib,
-  install : true)
+  dependencies: [gio],
+  install : true
+)
 

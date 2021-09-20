@@ -5,6 +5,7 @@
 #include "dawki/container_widget/navigation.panel.h"
 #include "gtkmm/box.h"
 #include "gtkmm/window.h"
+#include "gtkmm/windowhandle.h"
 
 #include <string_view>
 
