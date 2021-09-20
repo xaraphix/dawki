@@ -25,5 +25,5 @@ dawki_lib = static_library(
   'dawki_gui',
   src_files,
   dependencies: dawki_deps,
-  include_directories: inc
+  include_directories: [inc]
 )

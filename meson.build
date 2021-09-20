@@ -30,17 +30,34 @@ dawki_deps = [
 inc = include_directories('include')
 gnome = import('gnome')
 
+objcopy = find_program('objcopy')
+widgets_config_in = 'config/dawki_widgets_config.json'
+widgets_config_out = 'config/dawki_widgets_config.o'
+
+run_command('objcopy', 
+            '--input-target',
+            'binary', 
+            '--output-target',
+            'pe-x86-64',
+            '--binary-architecture',
+            'i386:x86-64',
+            widgets_config_in, 
+            widgets_config_out)
+
+
 subdir('src')
 
-gresources = gnome.compile_resources(
+asset_resources = gnome.compile_resources(
     'dawki-resourcess',
     'assets/gresources.xml',
     source_dir: ['assets'],
 )
 
+
 exe = executable(
   'dawki', 
-  gresources,
+  asset_resources,
+  objects: [widgets_config_out],
   link_with: dawki_lib,
   dependencies: [gio],
   install : true
