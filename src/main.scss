@@ -1,7 +1,10 @@
 @import "./widget/widget.scss";
-@import "./container_widget/container_widget.scss";
+@import "./box_widget/box_widget.scss";
 
 window {
+  background: none;
+}
+.root {
   background: rgb(30, 34, 37);
   border-radius: 8px;
 }

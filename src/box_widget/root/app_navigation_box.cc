@@ -1,14 +1,14 @@
 #include <string>
 
+#include "dawki/box_widget/root/app_navigation_box.h"
 #include "dawki/common/css_source_provider.h"
 #include "dawki/common/dawki_config_parser.h"
-#include "dawki/container_widget/navigation.panel.h"
 
 #include "glibmm/ustring.h"
 #include "gtkmm/box.h"
 #include "gtkmm/enums.h"
 
-Dwki::NavigationPanel::NavigationPanel()
+Dwki::AppNavigationBox::AppNavigationBox()
 : Glib::ObjectBase(GetProperty<std::string>(NAVIGATION_NAME_PATH).c_str())
 , CssClassInitializer(GetProperty<Glib::ustring>(NAVIGATION_CSS_NODE_PATH))
 , Gtk::Box()
@@ -17,6 +17,9 @@ Dwki::NavigationPanel::NavigationPanel()
   set_expand(false);
   auto cssProvider = CssSourceProvider::Get()->getCssSource();
   get_style_context()->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+
+  draggableHeader.set_child(windowActions);
+  draggableHeader.set_expand(false);
 
   dockerContainersIcon.get_style_context()->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
   dockerContainersLabel.get_style_context()->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
@@ -40,6 +43,7 @@ Dwki::NavigationPanel::NavigationPanel()
   dockerImagesBox.append(dockerImagesIcon);
   dockerImagesBox.append(dockerImagesLabel);
 
+  append(draggableHeader);
   append(dockerContainersBox);
   append(dockerImagesBox);
 }

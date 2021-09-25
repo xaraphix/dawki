@@ -11,7 +11,7 @@
 
 namespace Dwki
 {
-class ContentActionBarPanel
+class ContentActionBarBox
 : public CssClassInitializer
 , public Gtk::Box
 {

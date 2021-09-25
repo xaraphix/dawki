@@ -2,7 +2,7 @@
   "app": {
     "domain": "in.suyashsingh",
     "style": {
-      "cssPath": "/assets/dawki.css"
+      "cssPath": "/assets/dawki.css", "node": "window","cssClass": "root"
     },
     "title": {
       "name": "Dawki",

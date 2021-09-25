@@ -10,12 +10,12 @@
 
 namespace Dwki
 {
-class AppWindowActionBarPanel
+class AppWindowActionsBox
 : public Dwki::CssClassInitializer
 , public Gtk::Box
 {
 public:
-  AppWindowActionBarPanel();
+  AppWindowActionsBox();
 
   static constexpr auto APP_WINDOW_ACTION_BAR_NAME_PATH     = "app.headerBar.windowActionBar.name";
   static constexpr auto APP_WINDOW_ACTION_BAR_CSS_NODE_PATH = "app.headerBar.windowActionBar.style.node";

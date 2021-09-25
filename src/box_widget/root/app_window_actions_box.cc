@@ -1,4 +1,4 @@
-#include "dawki/container_widget/app_window_action_bar.panel.h"
+#include "dawki/box_widget/root/app_window_actions_box.h"
 #include "dawki/common/css_initializer.h"
 #include "dawki/common/css_source_provider.h"
 #include "dawki/common/dawki_config_parser.h"
@@ -7,7 +7,7 @@
 #include "glibmm/ustring.h"
 #include "gtkmm/box.h"
 
-Dwki::AppWindowActionBarPanel::AppWindowActionBarPanel()
+Dwki::AppWindowActionsBox::AppWindowActionsBox()
 : Glib::ObjectBase(GetProperty<std::string>(APP_WINDOW_ACTION_BAR_NAME_PATH).c_str())
 , CssClassInitializer(GetProperty<Glib::ustring>(APP_WINDOW_ACTION_BAR_CSS_NODE_PATH))
 , Gtk::Box(Gtk::Orientation::HORIZONTAL)
