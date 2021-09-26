@@ -4,7 +4,9 @@
 #include "dawki/box_widget/root/app_navigation_box.h"
 #include "dawki/common/css_initializer.h"
 #include "gtkmm/box.h"
+#include "gtkmm/widget.h"
 #include "gtkmm/window.h"
+#include "gtkmm/windowcontrols.h"
 #include "gtkmm/windowhandle.h"
 
 #include <string_view>
@@ -22,6 +24,7 @@ public:
 
 private:
   Gtk::Box root;
+  Gtk::Box ghostHeader;
   Dwki::AppNavigationBox navigation;
   Dwki::AppContentBox content;
 };
