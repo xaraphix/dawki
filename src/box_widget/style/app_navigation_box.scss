@@ -1,38 +1,38 @@
 dawki-navigation {
-  min-width: 300px;
-  padding: 2px 10px 2px 5px;
+  min-width: 18rem;
+  padding: 0.2rem 1rem 0.2rem 0.3rem;
   background: rgb(30, 29, 29);
 
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
 
-  .nav-item {
-    font-size: 18px;
-    font-family: 'JetBrains Mono';
-    min-width: 130px;
-    padding: 5px 10px 5px 20px;
-    &:hover {
-      background: rgb(3, 32, 88);
-    }
+.nav-item {
+  font-size: 1.9rem;
+  font-family: "Overpass";
+  font-weight: 50;
+  min-width: 1.3rem;
+  padding: 0.5rem 1rem 0.5rem 2rem;
+  &:hover {
+    background: rgb(3, 32, 88);
   }
+}
 
-  .icon {
-  }
+.icon {
+}
 
-  .docker-containers-nav-icon {
-    @extend .icon;
-  }
+.docker-containers-nav-icon {
+  @extend .icon;
+}
 
-  .docker-containers-nav-label {
-    @extend .nav-item;
-  }
+.docker-containers-nav-label {
+  @extend .nav-item;
+}
 
-  .docker-images-nav-icon {
-    @extend .icon;
-  }
+.docker-images-nav-icon {
+  @extend .icon;
+}
 
-  .docker-images-nav-label {
-    @extend .nav-item;
-  }
-
+.docker-images-nav-label {
+  @extend .nav-item;
+}
