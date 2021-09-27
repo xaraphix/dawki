@@ -1,9 +1,12 @@
-dawki-min-btn {
+.dawki-min-btn {
   @extend .window-action-btn;
-  background-image: url("/assets/icons/circle.svg");
-  filter: invert(80%) sepia(18%) saturate(6735%) hue-rotate(4deg) brightness(94%) contrast(91%);
+  background-image: url("/assets/icons/common/window_minimize.svg");
+}
+
+.dawki-min-btn-2 {
+  @extend .window-action-btn;
+  background-image: url("/assets/icons/common/window_maximize.svg");
 }
 
 dawki-min-btn:hover {
-  background-image: url("/assets/icons/window_minimize.svg");
 }

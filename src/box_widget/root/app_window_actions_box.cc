@@ -6,6 +6,7 @@
 #include "glibmm/object.h"
 #include "glibmm/ustring.h"
 #include "gtkmm/box.h"
+#include "gtkmm/widget.h"
 
 Dwki::AppWindowActionsBox::AppWindowActionsBox()
 : Glib::ObjectBase(GetProperty<std::string>(APP_WINDOW_ACTION_BAR_NAME_PATH).c_str())

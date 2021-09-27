@@ -1,9 +1,7 @@
 dawki-max-btn {
   @extend .window-action-btn;
-  background-image: url("/assets/icons/circle.svg");
-  filter: invert(51%) sepia(66%) saturate(577%) hue-rotate(94deg) brightness(89%) contrast(92%); 
+  background-image: url("/assets/icons/common/window_maximize.svg");
 }
 
 dawki-max-btn:hover {
-  background-image: url("/assets/icons/window_maximize.svg");
 }

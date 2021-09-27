@@ -20,6 +20,7 @@ Dwki::AppNavigationBox::AppNavigationBox()
 
   draggableHeader.set_child(windowActions);
   draggableHeader.set_expand(false);
+  draggableHeader.set_cursor("move");
 
   dockerContainersIcon.get_style_context()->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
   dockerContainersLabel.get_style_context()->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);

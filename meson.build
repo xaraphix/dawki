@@ -13,6 +13,7 @@ project(
 cxx = meson.get_compiler('cpp')
 
 gtk_dep = dependency('gtkmm-4.0')
+sigcpp_dep = dependency('sigc++-3.0')
 thread_dep = dependency('threads')
 boost_dep = [
     cxx.find_library('boost_thread'),

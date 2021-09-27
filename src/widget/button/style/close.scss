@@ -1,9 +1,7 @@
 dawki-close-btn {
   @extend .window-action-btn;
-  background-image: url("/assets/icons/circle.svg");
-  filter:invert(17%) sepia(75%) saturate(2905%) hue-rotate(331deg) brightness(83%) contrast(102%); 
+  background-image: url("/assets/icons/common/window_close.svg");
 }
 
 dawki-close-btn:hover {
-  background-image: url("/assets/icons/window_close.svg");
 }

@@ -1,8 +1,13 @@
 @import "./widget/widget.scss";
 @import "./box_widget/box_widget.scss";
 
+* {
+  all: unset;
+}
+
 window {
   background: none;
+  font-size: 10px;
 }
 .root {
   background: rgb(30, 34, 37);

@@ -1,31 +1,22 @@
-.window-action-btn, dawki-max-btn, dawki-min-btn, dawki-close-btn {
+.window-action-btn, dawki-max-btn, .dawki-min-btn-2, .dawki-min-btn, dawki-close-btn {
   background-position: center;
   margin: 0;
   margin-right: 7px;
-  min-width: 13px;
-  background-size: 13px;
+  min-width: 3em;
+  background-size: 3em;
   background-repeat: no-repeat; }
 
 dawki-close-btn {
-  background-image: url("/assets/icons/circle.svg");
-  filter: invert(17%) sepia(75%) saturate(2905%) hue-rotate(331deg) brightness(83%) contrast(102%); }
+  background-image: url("/assets/icons/common/window_close.svg"); }
 
-dawki-close-btn:hover {
-  background-image: url("/assets/icons/window_close.svg"); }
+.dawki-min-btn {
+  background-image: url("/assets/icons/common/window_minimize.svg"); }
 
-dawki-min-btn {
-  background-image: url("/assets/icons/circle.svg");
-  filter: invert(80%) sepia(18%) saturate(6735%) hue-rotate(4deg) brightness(94%) contrast(91%); }
-
-dawki-min-btn:hover {
-  background-image: url("/assets/icons/window_minimize.svg"); }
+.dawki-min-btn-2 {
+  background-image: url("/assets/icons/common/window_maximize.svg"); }
 
 dawki-max-btn {
-  background-image: url("/assets/icons/circle.svg");
-  filter: invert(51%) sepia(66%) saturate(577%) hue-rotate(94deg) brightness(89%) contrast(92%); }
-
-dawki-max-btn:hover {
-  background-image: url("/assets/icons/window_maximize.svg"); }
+  background-image: url("/assets/icons/common/window_maximize.svg"); }
 
 dawki-navigation {
   min-width: 18rem;
@@ -36,7 +27,7 @@ dawki-navigation {
 
 .nav-item, .docker-images-nav-label, .docker-containers-nav-label {
   font-size: 1.9rem;
-  font-family: 'Overpass';
+  font-family: "Overpass";
   font-weight: 50;
   min-width: 1.3rem;
   padding: 0.5rem 1rem 0.5rem 2rem; }
@@ -49,12 +40,16 @@ dawki-content {
   border-bottom-right-radius: 8px; }
 
 dawki-window-action-bar {
-  min-height: 10px;
+  min-height: 80px;
   margin-left: 20px;
   margin-top: 15px; }
 
+* {
+  all: unset; }
+
 window {
-  background: none; }
+  background: none;
+  font-size: 10px; }
 
 .root {
   background: #1e2225;
