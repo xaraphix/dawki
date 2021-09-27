@@ -1,3 +1,4 @@
+#pragma once
 #include "glibmm/ustring.h"
 #include "gtkmm/widget.h"
 

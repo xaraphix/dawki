@@ -1,3 +1,4 @@
+#pragma once
 #include "dawki/common/css_initializer.h"
 #include "dawki/common/widgets/base_widget.h"
 #include "glibmm/ustring.h"

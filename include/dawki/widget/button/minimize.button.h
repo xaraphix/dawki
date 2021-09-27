@@ -13,7 +13,6 @@ public:
   MinimizeBtn();
   static constexpr auto WINDOW_MIN_ACTION_NAME_PATH     = "app.headerBar.windowActionBar.minBtn.style.node";
   static constexpr auto WINDOW_MIN_ACTION_CSS_NODE_PATH = "app.headerBar.windowActionBar.minBtn.style.node";
-  void task1();
 
 protected:
 };

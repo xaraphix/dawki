@@ -1,4 +1,4 @@
-.window-action-btn, dawki-max-btn, .dawki-min-btn-2, .dawki-min-btn, dawki-close-btn {
+.window-action-btn, .dawki-max-btn, .dawki-min-btn-2, .dawki-min-btn, .dawki-close-btn {
   background-position: center;
   margin: 0;
   margin-right: 7px;
@@ -6,7 +6,7 @@
   background-size: 3em;
   background-repeat: no-repeat; }
 
-dawki-close-btn {
+.dawki-close-btn {
   background-image: url("/assets/icons/common/window_close.svg"); }
 
 .dawki-min-btn {
@@ -15,7 +15,7 @@ dawki-close-btn {
 .dawki-min-btn-2 {
   background-image: url("/assets/icons/common/window_maximize.svg"); }
 
-dawki-max-btn {
+.dawki-max-btn {
   background-image: url("/assets/icons/common/window_maximize.svg"); }
 
 dawki-navigation {
