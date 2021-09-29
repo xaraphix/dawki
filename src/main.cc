@@ -1,6 +1,8 @@
-#include "dawki/box_widget/root/app_root_window_box.h"
-#include "dawki/common/dawki_config_parser.h"
+#include "dawki/config/dawki_config_parser.h"
 #include "dawki/logging/logging.h"
+#include "dawki/widget/box/app_root/app_root_window_box.h"
+#include "gtkmm/box.h"
+#include "gtkmm/label.h"
 #include <string>
 
 void

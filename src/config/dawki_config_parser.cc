@@ -5,7 +5,7 @@
 #include <sstream>
 #include <string>
 
-#include "dawki/common/dawki_config_parser.h"
+#include "dawki/config/dawki_config_parser.h"
 
 #include "dawki/logging/logging.h"
 #include "giomm/file.h"

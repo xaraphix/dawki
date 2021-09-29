@@ -1,13 +1,12 @@
 
 #pragma once
 
-#include "dawki/common/widgets/button.h"
+#include "dawki/widget/base/widget.h"
 #include "gtkmm/button.h"
-#include <string_view>
 
 namespace Dwki
 {
-class MaximizeBtn : public Button
+class MaximizeBtn : public Widget<Gtk::Button>
 {
 public:
   MaximizeBtn();

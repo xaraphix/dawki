@@ -1,3 +1,8 @@
+.test{
+  min-width: 400px;
+  background: rgb(253, 92, 92);
+}
+
 .window-action-btn, .dawki-max-btn, .dawki-min-btn-2, .dawki-min-btn, .dawki-close-btn {
   background-position: center;
   margin: 0;
@@ -5,7 +10,7 @@
   min-width: 3em;
   background-size: 3em;
   background-repeat: no-repeat; }
-
+  
 .dawki-close-btn {
   background-image: url("/assets/icons/common/window_close.svg"); }
 
@@ -47,9 +52,6 @@ dawki-window-action-bar {
 * {
   all: unset; }
 
-window {
-  background: none;
-  font-size: 10px; }
 
 .root {
   background: #1e2225;

@@ -1,6 +1,6 @@
-#include "dawki/common/css_source_provider.h"
+#include "dawki/css/css_source_provider.h"
 
-#include "dawki/common/dawki_config_parser.h"
+#include "dawki/config/dawki_config_parser.h"
 #include "dawki/logging/logging.h"
 
 Dwki::CssSourceProvider::CssSourceProvider()

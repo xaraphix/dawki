@@ -1,13 +1,13 @@
 
 #pragma once
 
-#include "dawki/common/widgets/button.h"
+#include "dawki/widget/base/widget.h"
 #include "gtkmm/button.h"
 #include <string_view>
 
 namespace Dwki
 {
-class CloseBtn : public Button
+class CloseBtn : public Widget<Gtk::Button>
 {
 public:
   CloseBtn();
