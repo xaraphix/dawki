@@ -4,6 +4,7 @@
 #include "gtkmm/box.h"
 #include "gtkmm/label.h"
 #include "gtkmm/widget.h"
+#include "gtkmm/windowhandle.h"
 
 namespace Dwki
 {
@@ -22,5 +23,6 @@ protected:
 };
 }
 
+template class Dwki::Widget<Gtk::WindowHandle>;
 template class Dwki::Widget<Gtk::Box>;
 template class Dwki::Widget<Gtk::Label>;

@@ -32,8 +32,8 @@ inc = include_directories('include')
 gnome = import('gnome')
 
 objcopy = find_program('objcopy')
-widgets_config_in = 'config/dawki_widgets_config.json'
-widgets_config_out = 'config/dawki_widgets_config.o'
+widgets_config_in = 'src/config/dawki_widgets_config.json'
+widgets_config_out = 'src/config/dawki_widgets_config.o'
 
 run_command('objcopy', 
             '--input-target',

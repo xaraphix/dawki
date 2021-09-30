@@ -1,11 +1,21 @@
 {
   "app": {
+    "name": "main-window",
     "domain": "in.suyashsingh",
     "style": {
-      "cssPath": "/assets/dawki.css",
-      "node": "window",
-      "cssClass": "root"
-
+      "cssPath": "/assets/dawki.css"
+    },
+    "root": {
+      "name": "root-box",
+      "navigation": {
+        "name": "navigation-box",
+        "header": { "name": "navigtaion-header" },
+        "items": {"name": "navigation-items"}
+      },
+      "content": {
+        "name": "content-box",
+        "header": { "name": "content-header" }
+      }
     },
     "title": {
       "name": "Dawki",

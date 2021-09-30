@@ -1,60 +1,16 @@
-.test{
-  min-width: 400px;
-  background: rgb(253, 92, 92);
-}
-
-.window-action-btn, .dawki-max-btn, .dawki-min-btn-2, .dawki-min-btn, .dawki-close-btn {
-  background-position: center;
-  margin: 0;
-  margin-right: 7px;
-  min-width: 3em;
-  background-size: 3em;
-  background-repeat: no-repeat; }
-  
-.dawki-close-btn {
-  background-image: url("/assets/icons/common/window_close.svg"); }
-
-.dawki-min-btn {
-  background-image: url("/assets/icons/common/window_minimize.svg"); }
-
-.dawki-min-btn-2 {
-  background-image: url("/assets/icons/common/window_maximize.svg"); }
-
-.dawki-max-btn {
-  background-image: url("/assets/icons/common/window_maximize.svg"); }
-
-dawki-navigation {
-  min-width: 18rem;
-  padding: 0.2rem 1rem 0.2rem 0.3rem;
-  background: #1e1d1d;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px; }
-
-.nav-item, .docker-images-nav-label, .docker-containers-nav-label {
-  font-size: 1.9rem;
-  font-family: "Overpass";
-  font-weight: 50;
-  min-width: 1.3rem;
-  padding: 0.5rem 1rem 0.5rem 2rem; }
-  .nav-item:hover, .docker-images-nav-label:hover, .docker-containers-nav-label:hover {
-    background: #032058; }
-
-dawki-content {
-  background: #1B1B1B;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px; }
-
-dawki-window-action-bar {
-  min-height: 80px;
-  margin-left: 20px;
-  margin-top: 15px; }
+.root-box {
+  background: #060303; }
+.navigation-box {
+  background: #300F0F; }
+.content-box {
+  background: #55E9DF; }
 
 * {
   all: unset; }
 
+window {
+  background: none;
+  font-size: 10px; }
 
-.root {
-  background: #1e2225;
-  border-radius: 8px; }
 
 /*# sourceMappingURL=dawki.css.map */
