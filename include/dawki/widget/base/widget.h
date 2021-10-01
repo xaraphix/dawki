@@ -12,14 +12,15 @@ template<typename T>
 class Widget
 {
 public:
-  static_assert(std::is_base_of<Gtk::Widget, T>::value, "T1 must derive from Base");
-  Widget(Glib::ustring const cssClass);
-  void UpdateCssClass(Glib::ustring const cssClass);
+  static_assert(std::is_base_of<Gtk::Widget, T>::value, "T must be of type Gtk::Widget");
+  Widget(Glib::ustring const name);
+  void UpdateCssClass(Glib::ustring const newCssClass);
   T widget;
 
 protected:
+  Glib::ustring name;
   Glib::ustring cssClass;
-  void initCssClass(Glib::ustring const cssClass);
+  void initCssClass();
 };
 }
 

@@ -1,0 +1,38 @@
+.window-action-btn{
+  background-position: center;
+  margin: 0;
+  margin-right: 7px;
+  min-width: 3em;
+  background-size: 3em;
+  background-repeat: no-repeat;
+}
+
+.dawki-close-btn {
+  @extend .window-action-btn;
+  background-image: url("/assets/icons/common/window_close.svg");
+}
+
+.dawki-close-btn:hover {
+}
+
+.dawki-max-btn {
+  @extend .window-action-btn;
+  background-image: url("/assets/icons/common/window_maximize.svg");
+}
+
+.dawki-max-btn:hover {
+}
+
+.dawki-min-btn {
+  @extend .window-action-btn;
+  background-image: url("/assets/icons/common/window_minimize.svg");
+}
+
+.dawki-min-btn-2 {
+  @extend .window-action-btn;
+  background-image: url("/assets/icons/common/window_maximize.svg");
+}
+
+dawki-min-btn:hover {
+}
+

@@ -7,6 +7,4 @@ Dwki::AppNavigationItemsBox::AppNavigationItemsBox()
 , dockerContainersItemBox("")
 , dockerImagesItemBox("")
 {
-  this->widget.set_size_request(100, 50);
-  this->widget.set_hexpand(true);
 }

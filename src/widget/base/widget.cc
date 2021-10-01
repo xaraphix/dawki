@@ -5,28 +5,25 @@
 #include "pangomm/rectangle.h"
 
 template<typename T>
-Dwki::Widget<T>::Widget(Glib::ustring const cssClass) : widget(), cssClass(cssClass)
+Dwki::Widget<T>::Widget(Glib::ustring const name) : widget(), name(name), cssClass(name + "-dark")
 {
-  initCssClass(cssClass);
+  initCssClass();
 }
 
 template<class T>
 void
-Dwki::Widget<T>::initCssClass(Glib::ustring const cssClass)
+Dwki::Widget<T>::initCssClass()
 {
   auto cssProvider = CssSourceProvider::Get()->getCssSource();
   widget.get_style_context()->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+  widget.add_css_class(name);
   widget.add_css_class(cssClass);
 }
 
 template<typename T>
 void
-Dwki::Widget<T>::UpdateCssClass(Glib::ustring const cssClass)
+Dwki::Widget<T>::UpdateCssClass(Glib::ustring const newCssClass)
 {
-  auto classes = widget.get_css_classes();
-  for (auto c : classes)
-  {
-    widget.remove_css_class(c);
-  }
-  widget.add_css_class(cssClass);
+  widget.remove_css_class(cssClass);
+  widget.add_css_class(newCssClass);
 }

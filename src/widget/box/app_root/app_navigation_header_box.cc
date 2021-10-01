@@ -8,6 +8,4 @@ Dwki::AppNavigationHeaderBox::AppNavigationHeaderBox()
 : Widget<Gtk::Box>(GetProperty<Glib::ustring>(NAVIGATION_HEADER_BOX_NAME))
 {
   this->widget.set_orientation(Gtk::Orientation::HORIZONTAL);
-  this->widget.set_size_request(100, 50);
-  this->widget.set_hexpand(true);
 }

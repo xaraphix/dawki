@@ -1,0 +1,12 @@
+@import './variables.scss';
+
+.#{$navigation-box} {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  min-width: 300px;
+}
+
+.#{$content-box} {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}

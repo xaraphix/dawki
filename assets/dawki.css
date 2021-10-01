@@ -1,16 +1,32 @@
-.root-box {
-  background: #060303; }
 .navigation-box {
-  background: #300F0F; }
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  min-width: 300px; }
+
 .content-box {
-  background: #55E9DF; }
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px; }
+
+.main-window-dark {
+  background: none; }
+
+.root-box-dark {
+  background: none; }
+
+.navigation-box-dark {
+  background: #1B1B1B;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px; }
+
+.content-box-dark {
+  background: #1A1A1A;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px; }
 
 * {
   all: unset; }
 
 window {
-  background: none;
   font-size: 10px; }
-
 
 /*# sourceMappingURL=dawki.css.map */

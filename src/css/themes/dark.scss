@@ -1,0 +1,50 @@
+@import '../variables.scss';
+
+$theme: 'dark';
+
+$blue-50:  #efe5ff;
+$blue-100: #d3bfff;
+$blue-200: #b494ff;
+$blue-300: #9066ff;
+$blue-400: #703fff;
+$blue-500: #4504ff;
+$blue-600: #2e00ff;
+$blue-700: #0000f7;
+$blue-800: #0000A3;
+$blue-850: #000052;
+$blue-900: #000029;
+
+$gray-50:  #f5f5f5;
+$gray-100: #e9e9e9;
+$gray-200: #d9d9d9;
+$gray-300: #c4c4c4;
+$gray-400: #9d9d9d;
+$gray-500: #7b7b7b;
+$gray-600: #555555;
+$gray-700: #434343;
+$gray-700: #353535;
+$gray-800: #262626;
+$gray-850: #1B1B1B;
+$gray-860: #1A1A1A;
+$gray-900: #000000;
+
+.#{$main-window}-#{$theme} {
+  background: none;
+}
+
+.#{$root-box}-#{$theme} {
+  background: none;
+}
+
+.#{$navigation-box}-#{$theme} {
+  background: $gray-850;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.#{$content-box}-#{$theme} {
+  background: $gray-860;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+}

@@ -1,11 +1,11 @@
-@import './box/box.scss';
+@import './box.scss';
+
+@import './themes/dark.scss';
 
 * {
   all: unset;
 }
 
 window {
-  background: none;
   font-size: 10px;
 }
-
