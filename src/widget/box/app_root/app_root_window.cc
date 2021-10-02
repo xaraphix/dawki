@@ -11,6 +11,7 @@ Dwki::AppMainWindow::AppMainWindow() : root(), ghostHeader("ghost-header")
 {
   auto cssProvider = CssSourceProvider::Get()->getCssSource();
   get_style_context()->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
+  add_css_class("main-window");
   add_css_class("main-window-dark");
   set_titlebar(ghostHeader.widget);
   set_child(root.widget);

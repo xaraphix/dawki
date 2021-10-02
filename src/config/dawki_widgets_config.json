@@ -9,7 +9,7 @@
       "name": "root-box",
       "navigation": {
         "name": "navigation-box",
-        "header": { "name": "navigtaion-header" },
+        "header": { "name": "navigation-header" },
         "items": {"name": "navigation-items"}
       },
       "content": {

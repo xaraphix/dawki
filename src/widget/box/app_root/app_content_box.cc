@@ -12,4 +12,5 @@ Dwki::AppContentBox::AppContentBox()
   this->widget.set_orientation(Gtk::Orientation::VERTICAL);
   this->widget.append(headerHandle.widget);
   this->widget.append(dockerContainers.widget);
+  this->widget.set_expand(true);
 }

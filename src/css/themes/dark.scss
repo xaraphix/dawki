@@ -38,13 +38,14 @@ $gray-900: #000000;
 
 .#{$navigation-box}-#{$theme} {
   background: $gray-850;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
 }
 
 .#{$content-box}-#{$theme} {
   background: $gray-860;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+}
 
+.#{$navigation-header}-#{$theme} {
+}
+
+.#{$content-header}-#{$theme} {
 }
