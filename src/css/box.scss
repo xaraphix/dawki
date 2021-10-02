@@ -1,12 +1,41 @@
 @import './variables.scss';
 
-$base-font-size: 10px;
+$base-font-size-md: 15px;
+$base-font-size-lg: 20px;
+$base-font-size-xl: 25px;
+$base-font-size-2xl: 30px;
 $window-min-height: 500px;
 $window-min-width: 800px;
 $border-radius: 8px;
-$draggable-header-height: 50px;
+$draggable-header-height: 10em;
+
 
 .#{$main-window} {
+  font-size: $base-font-size-lg;
+  min-width: $window-min-width;
+  min-height: $window-min-height;
+}
+
+.#{$main-window}-md {
+  font-size: $base-font-size-md;
+  min-width: $window-min-width;
+  min-height: $window-min-height;
+}
+
+.#{$main-window}-lg {
+  font-size: $base-font-size-lg;
+  min-width: $window-min-width;
+  min-height: $window-min-height;
+}
+
+.#{$main-window}-xl {
+  font-size: $base-font-size-xl;
+  min-width: $window-min-width;
+  min-height: $window-min-height;
+}
+
+.#{$main-window}-2xl {
+  font-size: $base-font-size-2xl;
   min-width: $window-min-width;
   min-height: $window-min-height;
 }

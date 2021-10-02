@@ -1,6 +1,35 @@
 .main-window {
+  font-size: 20px;
   min-width: 800px;
   min-height: 500px; }
+
+.main-window-md {
+  font-size: 15px;
+  min-width: 800px;
+  min-height: 500px; }
+
+.main-window-lg {
+  font-size: 20px;
+  min-width: 800px;
+  min-height: 500px; }
+
+.main-window-xl {
+  font-size: 25px;
+  min-width: 800px;
+  min-height: 500px; }
+
+.main-window-2xl {
+  font-size: 30px;
+  min-width: 800px;
+  min-height: 500px; }
+
+.navigation-header {
+  border-top-left-radius: 8px;
+  min-height: 10em; }
+
+.content-header {
+  border-top-right-radius: 8px;
+  min-height: 10em; }
 
 .navigation-box {
   border-top-left-radius: 8px;
@@ -11,14 +40,6 @@
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   min-width: calc(800px * 2/3); }
-
-.navigation-header {
-  border-top-left-radius: 8px;
-  min-height: 50px; }
-
-.content-header {
-  border-top-right-radius: 8px;
-  min-height: 50px; }
 
 .main-window-dark {
   background: none; }
@@ -31,11 +52,5 @@
 
 .content-box-dark {
   background: #1A1A1A; }
-
-* {
-  all: unset; }
-
-window {
-  font-size: 10px; }
 
 /*# sourceMappingURL=dawki.css.map */
