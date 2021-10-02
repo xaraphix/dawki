@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
   <gresource prefix="/assets/">
-    <file compressed="true">icons/common/window_close.svg</file>
-  <file compressed="true">icons/common/window_minimize.svg</file>
-  <file compressed="true">icons/common/window_maximize.svg</file>
+  <file compressed="true">icons/circle.svg</file>
+  <file compressed="true">icons/common/md/window_close.svg</file>
+  <file compressed="true">icons/common/md/window_minimize.svg</file>
+  <file compressed="true">icons/common/md/window_maximize.svg</file>
   <file compressed="true">fonts/BeVietnamPro-Light.ttf</file>
   <file compressed="true">dawki.css</file>
 </gresource>

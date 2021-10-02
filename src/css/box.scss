@@ -9,7 +9,6 @@ $window-min-width: 800px;
 $border-radius: 8px;
 $draggable-header-height: 10em;
 
-
 .#{$main-window} {
   font-size: $base-font-size-lg;
   min-width: $window-min-width;
@@ -43,6 +42,11 @@ $draggable-header-height: 10em;
 .#{$navigation-header} {
   border-top-left-radius: $border-radius;
   min-height: $draggable-header-height;
+}
+
+.#{$win-actions} {
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .#{$content-header} {

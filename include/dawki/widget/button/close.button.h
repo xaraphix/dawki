@@ -1,4 +1,3 @@
-
 #pragma once
 
 #include "dawki/widget/base/widget.h"
@@ -11,8 +10,7 @@ class CloseBtn : public Widget<Gtk::Button>
 {
 public:
   CloseBtn();
-  static constexpr auto WINDOW_CLOSE_ACTION_NAME_PATH     = "app.headerBar.windowActionBar.closeBtn.style.node";
-  static constexpr auto WINDOW_CLOSE_ACTION_CSS_NODE_PATH = "app.headerBar.windowActionBar.closeBtn.style.node";
+  static constexpr auto CLOSE_BTN_NAME = "app.root.navigation.header.windowActions.close.name";
 
 protected:
 };

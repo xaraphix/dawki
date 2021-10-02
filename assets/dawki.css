@@ -1,3 +1,6 @@
+* {
+  all: unset; }
+
 .main-window {
   font-size: 20px;
   min-width: 800px;
@@ -27,6 +30,10 @@
   border-top-left-radius: 8px;
   min-height: 10em; }
 
+.window-actions {
+  margin-left: 10px;
+  margin-top: 10px; }
+
 .content-header {
   border-top-right-radius: 8px;
   min-height: 10em; }
@@ -40,6 +47,43 @@
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   min-width: calc(800px * 2/3); }
+
+.window-action-btn, .dawki-min-btn-2, .dawki-min-btn, .dawki-max-btn, .dawki-close-btn {
+  background-position: center;
+  margin: 0;
+  margin-right: 7px;
+  min-width: 3em;
+  background-size: 3em;
+  background-repeat: no-repeat; }
+
+.dawki-close-btn {
+  background-image: url("/assets/icons/common/window_close.svg"); }
+
+.dawki-max-btn {
+  background-image: url("/assets/icons/common/window_maximize.svg"); }
+
+.dawki-min-btn {
+  background-image: url("/assets/icons/common/window_minimize.svg"); }
+
+.dawki-min-btn-2 {
+  background-image: url("/assets/icons/common/window_maximize.svg"); }
+
+.win-close-btn-md {
+  min-width: 10px;
+  background-image: url("/assets/icons/common/md/window_close.svg");
+  background-repeat: no-repeat; }
+
+.win-min-btn-md {
+  min-width: 10px;
+  margin-left: 3px;
+  background-image: url("/assets/icons/common/md/window_minimize.svg");
+  background-repeat: no-repeat; }
+
+.win-max-btn-md {
+  min-width: 10px;
+  margin-left: 3px;
+  background-image: url("/assets/icons/common/md/window_maximize.svg");
+  background-repeat: no-repeat; }
 
 .main-window-dark {
   background: none; }

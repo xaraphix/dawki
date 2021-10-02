@@ -1,0 +1,21 @@
+@import "../variables.scss";
+
+.#{$win-close-btn}-md {
+  min-width: 10px;
+  background-image: url("/assets/icons/common/md/window_close.svg");
+  background-repeat: no-repeat;
+}
+
+.#{$win-min-btn}-md {
+  min-width: 10px;
+  margin-left: 3px;
+  background-image: url("/assets/icons/common/md/window_minimize.svg");
+  background-repeat: no-repeat;
+}
+
+.#{$win-max-btn}-md {
+  min-width: 10px;
+  margin-left: 3px;
+  background-image: url("/assets/icons/common/md/window_maximize.svg");
+  background-repeat: no-repeat;
+}

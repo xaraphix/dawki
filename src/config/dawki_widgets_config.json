@@ -9,7 +9,20 @@
       "name": "root-box",
       "navigation": {
         "name": "navigation-box",
-        "header": { "name": "navigation-header" },
+        "header": { "name": "navigation-header",
+          "windowActions": {
+            "name": "window-actions",
+            "close": {
+              "name": "win-close-btn-md"
+            },
+            "minimize": {
+              "name": "win-min-btn-md"
+            },
+            "maximize": {
+              "name": "win-max-btn-md"
+            }
+          }
+        },
         "items": {"name": "navigation-items"}
       },
       "content": {

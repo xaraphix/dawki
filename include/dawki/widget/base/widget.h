@@ -2,6 +2,7 @@
 
 #include "glibmm/ustring.h"
 #include "gtkmm/box.h"
+#include "gtkmm/button.h"
 #include "gtkmm/label.h"
 #include "gtkmm/widget.h"
 #include "gtkmm/windowhandle.h"
@@ -27,3 +28,4 @@ protected:
 template class Dwki::Widget<Gtk::WindowHandle>;
 template class Dwki::Widget<Gtk::Box>;
 template class Dwki::Widget<Gtk::Label>;
+template class Dwki::Widget<Gtk::Button>;
