@@ -1,7 +1,17 @@
 #include "dawki/widget/box/docker_containers/docker_containers_box.h"
+#include "dawki/logging/logging.h"
+#include "dawki/store/dawki_store.h"
 #include "dawki/widget/base/widget.h"
 #include "gtkmm/box.h"
 #include "gtkmm/label.h"
+#include "sigc++/adaptors/bind.h"
+#include "sigc++/functors/mem_fun.h"
+#include "sigc++/functors/ptr_fun.h"
+
+void
+Dwki::DockerContainersBox::calculateLabelsToShow(int windowWidth)
+{
+}
 
 Dwki::DockerContainersBox::DockerContainersBox() : Widget<Gtk::Box>(DOCKER_CONTAINERS_BOX_NAME_PATH)
 {
@@ -23,7 +33,8 @@ Dwki::DockerContainersBox::DockerContainersBox() : Widget<Gtk::Box>(DOCKER_CONTA
   imageLabel.widget.set_text("TEXT");
   idLabel.widget.set_text("TEXT");
   createdOnLabel.widget.set_text("TEXT");
-  statusLabel.widget.set_text("TEXT");
+  statusLabel.widget.set_text("Text");
 
   this->widget.append(labelBar.widget);
+  DawkiStore::Get()->WindowWidthUpdatedSignal.connect(sigc::mem_fun(*this, &DockerContainersBox::calculateLabelsToShow));
 }

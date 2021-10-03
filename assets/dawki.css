@@ -2,27 +2,27 @@
   all: unset; }
 
 .main-window {
-  font-size: 20px;
-  min-width: 800px;
-  min-height: 500px; }
-
-.main-window-md {
   font-size: 15px;
   min-width: 800px;
   min-height: 500px; }
 
+.main-window-md {
+  font-size: 10px;
+  min-width: 800px;
+  min-height: 500px; }
+
 .main-window-lg {
-  font-size: 20px;
+  font-size: 15px;
   min-width: 800px;
   min-height: 500px; }
 
 .main-window-xl {
-  font-size: 25px;
+  font-size: 18px;
   min-width: 800px;
   min-height: 500px; }
 
 .main-window-2xl {
-  font-size: 30px;
+  font-size: 22px;
   min-width: 800px;
   min-height: 500px; }
 

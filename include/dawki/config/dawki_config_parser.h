@@ -11,8 +11,8 @@ namespace Dwki
 class DawkiConfigParser
 {
 public:
-  DawkiConfigParser(DawkiConfigParser const&)            = delete;
-  DawkiConfigParser& operator-(DawkiConfigParser const&) = delete;
+  DawkiConfigParser(DawkiConfigParser const&) = delete;
+  DawkiConfigParser& operator=(DawkiConfigParser const&) = delete;
 
   static std::shared_ptr<DawkiConfigParser> Get()
   {

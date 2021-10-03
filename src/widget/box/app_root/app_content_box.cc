@@ -1,6 +1,9 @@
 #include "dawki/widget/box/app_root/app_content_box.h"
 #include "dawki/config/dawki_config_parser.h"
+#include "dawki/logging/logging.h"
 #include "glibmm/ustring.h"
+#include "gtkmm/box.h"
+#include "sigc++/adaptors/bind.h"
 
 Dwki::AppContentBox::AppContentBox()
 : Widget<Gtk::Box>(GetProperty<Glib::ustring>(CONTENT_BOX_NAME_PATH))

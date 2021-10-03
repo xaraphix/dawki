@@ -16,5 +16,6 @@ public:
 private:
   AppRootBox root;
   Dwki::Widget<Gtk::Box> ghostHeader;
+  void onResize();
 };
 }

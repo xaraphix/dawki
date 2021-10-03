@@ -12,5 +12,6 @@ public:
   static constexpr auto DOCKER_CONTAINERS_BOX_NAME_PATH = "app.root.content.dockerContainers.name";
 
 private:
+  void calculateLabelsToShow(int windowWidth);
 };
 }
