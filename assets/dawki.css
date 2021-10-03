@@ -28,7 +28,7 @@
 
 .navigation-header {
   border-top-left-radius: 8px;
-  min-height: 10em; }
+  min-height: 2em; }
 
 .window-actions {
   margin-left: 10px;
@@ -36,7 +36,7 @@
 
 .content-header {
   border-top-right-radius: 8px;
-  min-height: 10em; }
+  min-height: 2em; }
 
 .navigation-box {
   border-top-left-radius: 8px;

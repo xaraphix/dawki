@@ -5,6 +5,15 @@
   <file compressed="true">icons/common/md/window_close.svg</file>
   <file compressed="true">icons/common/md/window_minimize.svg</file>
   <file compressed="true">icons/common/md/window_maximize.svg</file>
+  <file compressed="true">icons/common/lg/window_close.svg</file>
+  <file compressed="true">icons/common/lg/window_minimize.svg</file>
+  <file compressed="true">icons/common/lg/window_maximize.svg</file>
+  <file compressed="true">icons/common/xl/window_close.svg</file>
+  <file compressed="true">icons/common/xl/window_minimize.svg</file>
+  <file compressed="true">icons/common/xl/window_maximize.svg</file>
+  <file compressed="true">icons/common/2xl/window_close.svg</file>
+  <file compressed="true">icons/common/2xl/window_minimize.svg</file>
+  <file compressed="true">icons/common/2xl/window_maximize.svg</file>
   <file compressed="true">fonts/BeVietnamPro-Light.ttf</file>
   <file compressed="true">dawki.css</file>
 </gresource>
