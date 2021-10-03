@@ -4,6 +4,7 @@
 #include "dawki/widget/box/app_root/app_root_box.h"
 #include "gtkmm/box.h"
 #include "gtkmm/window.h"
+#include "sigc++/connection.h"
 
 namespace Dwki
 {
@@ -16,6 +17,8 @@ public:
 private:
   AppRootBox root;
   Dwki::Widget<Gtk::Box> ghostHeader;
-  void onResize();
+  void pollSizeChange();
+  bool onResize();
+  int newWidth;
 };
 }

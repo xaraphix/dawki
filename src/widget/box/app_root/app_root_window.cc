@@ -4,13 +4,15 @@
 #include "dawki/store/dawki_store.h"
 #include "dawki/widget/base/widget.h"
 #include "dawki/widget/box/app_root/app_main_window.h"
+#include "glibmm/main.h"
 #include "glibmm/ustring.h"
 #include "gtk/gtk.h"
 #include "gtkmm/label.h"
+#include "gtkmm/widget.h"
 #include "gtkmm/window.h"
+#include "sigc++/connection.h"
 #include "sigc++/functors/mem_fun.h"
-
-Dwki::AppMainWindow::AppMainWindow() : root(), ghostHeader("ghost-header")
+Dwki::AppMainWindow::AppMainWindow() : root(), ghostHeader("ghost-header"), newWidth(0)
 {
   auto cssProvider = CssSourceProvider::Get()->getCssSource();
   get_style_context()->add_provider(cssProvider, GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
@@ -19,11 +21,28 @@ Dwki::AppMainWindow::AppMainWindow() : root(), ghostHeader("ghost-header")
   set_titlebar(ghostHeader.widget);
   set_child(root.widget);
   set_default_size(600, 400);
-  property_default_width().signal_changed().connect(sigc::mem_fun(*this, &AppMainWindow::onResize));
+  property_default_width().signal_changed().connect(sigc::mem_fun(*this, &AppMainWindow::pollSizeChange));
+  property_maximized().signal_changed().connect(sigc::mem_fun(*this, &AppMainWindow::pollSizeChange));
+  property_fullscreened().signal_changed().connect(sigc::mem_fun(*this, &AppMainWindow::pollSizeChange));
 }
 
 void
+Dwki::AppMainWindow::pollSizeChange()
+{
+  Glib::signal_timeout().connect(sigc::mem_fun(*this, &AppMainWindow::onResize), 100);
+}
+
+bool
 Dwki::AppMainWindow::onResize()
 {
-  Dwki::DawkiStore::Get()->WindowWidthUpdatedSignal(property_default_width());
+  if (newWidth != get_allocated_width())
+  {
+    newWidth = get_allocated_width();
+    DawkiStore::Get()->WindowWidthUpdatedSignal.emit(newWidth);
+    return true;
+  }
+  else
+  {
+    return false;
+  }
 }

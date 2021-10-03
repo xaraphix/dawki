@@ -11,6 +11,7 @@
 void
 Dwki::DockerContainersBox::calculateLabelsToShow(int windowWidth)
 {
+  LogInfo << "window size updated: " << windowWidth;
 }
 
 Dwki::DockerContainersBox::DockerContainersBox() : Widget<Gtk::Box>(DOCKER_CONTAINERS_BOX_NAME_PATH)
@@ -36,5 +37,6 @@ Dwki::DockerContainersBox::DockerContainersBox() : Widget<Gtk::Box>(DOCKER_CONTA
   statusLabel.widget.set_text("Text");
 
   this->widget.append(labelBar.widget);
-  DawkiStore::Get()->WindowWidthUpdatedSignal.connect(sigc::mem_fun(*this, &DockerContainersBox::calculateLabelsToShow));
+  DawkiStore::Get()->WindowWidthUpdatedSignal.connect(
+    sigc::mem_fun(*this, &DockerContainersBox::calculateLabelsToShow));
 }
