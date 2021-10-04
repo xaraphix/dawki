@@ -12,7 +12,7 @@ class AppNavigationBox : public Widget<Gtk::Box>
 {
 public:
   AppNavigationBox();
-  static constexpr auto NAVIGATION_BOX_NAME_PATH = "app.root.navigation.name";
+  static constexpr auto NAVIGATION_BOX_ID = "app.root.navigation.id";
 
 private:
   Widget<Gtk::WindowHandle> headerHandle;

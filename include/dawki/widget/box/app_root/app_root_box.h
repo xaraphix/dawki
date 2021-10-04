@@ -12,7 +12,7 @@ class AppRootBox : public Widget<Gtk::Box>
 {
 public:
   AppRootBox();
-  static constexpr auto ROOT_NAME_PATH = "app.root.name";
+  static constexpr auto ROOT_ID = "app.root.id";
 
 private:
   AppNavigationBox navigationBox;

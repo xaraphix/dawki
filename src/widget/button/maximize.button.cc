@@ -6,4 +6,4 @@
 
 using Dwki::MaximizeBtn;
 
-MaximizeBtn::MaximizeBtn() : Widget<Gtk::Button>(GetProperty<Glib::ustring>(MAXIMIZE_BTN_NAME)) {}
+MaximizeBtn::MaximizeBtn() : Widget<Gtk::Button>(GetProperty<Glib::ustring>(MAXIMIZE_BTN_ID)) {}

@@ -6,7 +6,7 @@
 #include "gtkmm/label.h"
 
 Dwki::AppNavigationHeaderBox::AppNavigationHeaderBox()
-: Widget<Gtk::Box>(GetProperty<Glib::ustring>(NAVIGATION_HEADER_BOX_NAME)), windowActions()
+: Widget<Gtk::Box>(GetProperty<Glib::ustring>(NAVIGATION_HEADER_BOX_ID)), windowActions()
 {
   widget.set_orientation(Gtk::Orientation::HORIZONTAL);
   widget.append(windowActions.widget);

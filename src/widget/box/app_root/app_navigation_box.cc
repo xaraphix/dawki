@@ -4,7 +4,7 @@
 #include "gtkmm/enums.h"
 
 Dwki::AppNavigationBox::AppNavigationBox()
-: Widget<Gtk::Box>(GetProperty<Glib::ustring>(NAVIGATION_BOX_NAME_PATH))
+: Widget<Gtk::Box>(GetProperty<Glib::ustring>(NAVIGATION_BOX_ID))
 , headerHandle("navigation-draggable-header")
 , navigationHeader()
 , navigationItems()

@@ -10,7 +10,7 @@ class AppNavigationItemsBox : public Widget<Gtk::Box>
 {
 public:
   AppNavigationItemsBox();
-  static constexpr auto NAVIGATION_ITEMS_BOX_NAME_PATH = "app.root.navigation.items.name";
+  static constexpr auto NAVIGATION_ITEMS_BOX_ID = "app.root.navigation.items.id";
 
 private:
   Widget<Gtk::Box> dockerContainersItemBox;

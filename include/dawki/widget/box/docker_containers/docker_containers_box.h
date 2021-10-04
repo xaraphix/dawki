@@ -9,7 +9,7 @@ class DockerContainersBox : public Widget<Gtk::Box>
 {
 public:
   DockerContainersBox();
-  static constexpr auto DOCKER_CONTAINERS_BOX_NAME_PATH = "app.root.content.dockerContainers.name";
+  static constexpr auto DOCKER_CONTAINERS_BOX_ID = "app.root.content.dockerContainers.id";
 
 private:
   void calculateLabelsToShow(int windowWidth);

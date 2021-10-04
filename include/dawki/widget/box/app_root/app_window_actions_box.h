@@ -12,7 +12,7 @@ class AppWindowActionsBox : public Widget<Gtk::Box>
 {
 public:
   AppWindowActionsBox();
-  static constexpr auto WINDOW_ACTIONS_BOX_NAME = "app.root.navigation.header.windowActions.name";
+  static constexpr auto WINDOW_ACTIONS_BOX_ID = "app.root.navigation.header.windowActions.id";
 
 private:
   CloseBtn closeBtn;

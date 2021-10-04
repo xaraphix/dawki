@@ -14,7 +14,7 @@ Dwki::DockerContainersBox::calculateLabelsToShow(int windowWidth)
   LogInfo << "window size updated: " << windowWidth;
 }
 
-Dwki::DockerContainersBox::DockerContainersBox() : Widget<Gtk::Box>(DOCKER_CONTAINERS_BOX_NAME_PATH)
+Dwki::DockerContainersBox::DockerContainersBox() : Widget<Gtk::Box>(DOCKER_CONTAINERS_BOX_ID)
 {
 
   auto labelBar       = Widget<Gtk::Box>("");

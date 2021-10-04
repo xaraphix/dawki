@@ -12,7 +12,7 @@ src_files = [
 'widget/box/app_root/app_navigation_header_box.cc',
 'widget/box/app_root/app_navigation_items_box.cc',
 'widget/box/app_root/app_root_box.cc',
-'widget/box/app_root/app_root_window.cc',
+'widget/box/app_root/app_main_window.cc',
 'widget/box/app_root/app_window_actions_box.cc',
 'widget/box/docker_containers/docker_containers_box.cc',
 'widget/button/close.button.cc',

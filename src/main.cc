@@ -15,8 +15,8 @@ int
 main(int argc, char* argv[])
 {
   initializeDawki();
-  static auto constexpr APP_DOMAIN_PATH = "app.domain";
-  auto app = Gtk::Application::create(Dwki::DawkiConfigParser::GetProperty<std::string>(APP_DOMAIN_PATH));
+  static auto constexpr APP_DOMAIN = "app.domain";
+  auto app = Gtk::Application::create(Dwki::DawkiConfigParser::GetProperty<std::string>(APP_DOMAIN));
 
   return app->make_window_and_run<Dwki::AppMainWindow>(argc, argv);
 }

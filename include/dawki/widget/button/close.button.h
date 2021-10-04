@@ -10,7 +10,7 @@ class CloseBtn : public Widget<Gtk::Button>
 {
 public:
   CloseBtn();
-  static constexpr auto CLOSE_BTN_NAME = "app.root.navigation.header.windowActions.close.name";
+  static constexpr auto CLOSE_BTN_ID = "app.root.navigation.header.windowActions.close.id";
 
 protected:
 };

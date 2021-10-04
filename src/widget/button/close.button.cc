@@ -5,4 +5,4 @@
 
 using Dwki::CloseBtn;
 
-CloseBtn::CloseBtn() : Widget<Gtk::Button>(GetProperty<Glib::ustring>(CLOSE_BTN_NAME)) {}
+CloseBtn::CloseBtn() : Widget<Gtk::Button>(GetProperty<Glib::ustring>(CLOSE_BTN_ID)) {}

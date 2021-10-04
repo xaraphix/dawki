@@ -10,7 +10,7 @@ class MaximizeBtn : public Widget<Gtk::Button>
 {
 public:
   MaximizeBtn();
-  static constexpr auto MAXIMIZE_BTN_NAME = "app.root.navigation.header.windowActions.maximize.name";
+  static constexpr auto MAXIMIZE_BTN_ID = "app.root.navigation.header.windowActions.maximize.id";
 
 protected:
 };

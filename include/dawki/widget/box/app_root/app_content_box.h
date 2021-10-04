@@ -12,7 +12,7 @@ class AppContentBox : public Widget<Gtk::Box>
 {
 public:
   AppContentBox();
-  static constexpr auto CONTENT_BOX_NAME_PATH = "app.root.content.name";
+  static constexpr auto CONTENT_BOX_ID = "app.root.content.id";
 
 private:
   Widget<Gtk::WindowHandle> headerHandle;

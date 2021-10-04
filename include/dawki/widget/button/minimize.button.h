@@ -11,7 +11,7 @@ class MinimizeBtn : public Widget<Gtk::Button>
 {
 public:
   MinimizeBtn();
-  static constexpr auto MINIMIZE_BTN_NAME = "app.root.navigation.header.windowActions.minimize.name";
+  static constexpr auto MINIMIZE_BTN_ID = "app.root.navigation.header.windowActions.minimize.id";
 
 protected:
 };

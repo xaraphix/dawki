@@ -5,4 +5,4 @@
 
 using Dwki::MinimizeBtn;
 
-MinimizeBtn::MinimizeBtn() : Widget<Gtk::Button>(GetProperty<Glib::ustring>(MINIMIZE_BTN_NAME)) {}
+MinimizeBtn::MinimizeBtn() : Widget<Gtk::Button>(GetProperty<Glib::ustring>(MINIMIZE_BTN_ID)) {}

@@ -11,7 +11,7 @@ class AppNavigationHeaderBox : public Widget<Gtk::Box>
 {
 public:
   AppNavigationHeaderBox();
-  static constexpr auto NAVIGATION_HEADER_BOX_NAME = "app.root.navigation.header.name";
+  static constexpr auto NAVIGATION_HEADER_BOX_ID = "app.root.navigation.header.id";
 
 private:
   AppWindowActionsBox windowActions;

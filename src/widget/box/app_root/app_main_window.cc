@@ -1,9 +1,9 @@
+#include "dawki/widget/box/app_root/app_main_window.h"
 #include "dawki/config/dawki_config_parser.h"
 #include "dawki/css/css_source_provider.h"
 #include "dawki/logging/logging.h"
 #include "dawki/store/dawki_store.h"
 #include "dawki/widget/base/widget.h"
-#include "dawki/widget/box/app_root/app_main_window.h"
 #include "glibmm/main.h"
 #include "glibmm/ustring.h"
 #include "gtk/gtk.h"
@@ -12,6 +12,7 @@
 #include "gtkmm/window.h"
 #include "sigc++/connection.h"
 #include "sigc++/functors/mem_fun.h"
+
 Dwki::AppMainWindow::AppMainWindow() : root(), ghostHeader("ghost-header"), newWidth(0)
 {
   auto cssProvider = CssSourceProvider::Get()->getCssSource();
