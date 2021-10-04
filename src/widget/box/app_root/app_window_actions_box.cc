@@ -4,7 +4,7 @@
 #include "gtkmm/enums.h"
 
 Dwki::AppWindowActionsBox::AppWindowActionsBox()
-: Widget<Gtk::Box>(GetProperty<Glib::ustring>(WINDOW_ACTIONS_BOX_ID)), closeBtn(), minBtn(), maxBtn()
+: Widget<Gtk::Box>(GetProperty<CORE_UI, Glib::ustring>(WINDOW_ACTIONS_BOX_ID)), closeBtn(), minBtn(), maxBtn()
 {
   widget.set_orientation(Gtk::Orientation::HORIZONTAL);
   widget.append(closeBtn.widget);

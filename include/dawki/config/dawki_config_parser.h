@@ -6,12 +6,22 @@
 #include <boost/property_tree/ptree_fwd.hpp>
 #include <memory>
 #include <string>
+#include <type_traits>
 
 namespace Dwki
 {
 class DawkiConfigParser
 {
+private:
+  DawkiConfigParser();
+  static boost::property_tree::ptree dawkiUiConfig;
+
 public:
+  enum ConfigType
+  {
+    CORE_UI,
+    USER_UI
+  };
   DawkiConfigParser(DawkiConfigParser const&) = delete;
   DawkiConfigParser& operator=(DawkiConfigParser const&) = delete;
 
@@ -21,20 +31,22 @@ public:
     return p;
   }
 
-  template<typename T>
+  template<ConfigType C, typename T>
   static T const GetProperty(std::string prop)
   {
-    return config.get<T>(prop);
+    if (C == ConfigType::CORE_UI)
+    {
+      return dawkiUiConfig.get<T>(prop);
+    }
   }
-
-private:
-  DawkiConfigParser();
-  static boost::property_tree::ptree config;
 };
 }
 
 namespace Dwki
 {
-template<typename T>
-const auto GetProperty = DawkiConfigParser::GetProperty<T>;
+template<DawkiConfigParser::ConfigType C, typename T>
+const auto GetProperty = DawkiConfigParser::GetProperty<C, T>;
+const auto CORE_UI     = DawkiConfigParser::ConfigType::CORE_UI;
+const auto USER_UI     = DawkiConfigParser::ConfigType::USER_UI;
+
 }

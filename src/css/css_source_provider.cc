@@ -7,7 +7,7 @@ Dwki::CssSourceProvider::CssSourceProvider()
 {
   m_refCssProvider = Gtk::CssProvider::create();
   m_refCssProvider->signal_parsing_error().connect(sigc::mem_fun(*this, &CssSourceProvider::on_parsing_error));
-  m_refCssProvider->load_from_resource(Dwki::GetProperty<Glib::ustring>(CSS_RESOURCE));
+  m_refCssProvider->load_from_resource(Dwki::GetProperty<CORE_UI, Glib::ustring>(CSS_RESOURCE));
 }
 
 Glib::RefPtr<Gtk::CssProvider>

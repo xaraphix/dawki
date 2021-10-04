@@ -3,7 +3,7 @@
 #include "glibmm/ustring.h"
 
 Dwki::AppNavigationItemsBox::AppNavigationItemsBox()
-: Widget<Gtk::Box>(GetProperty<Glib::ustring>(NAVIGATION_ITEMS_BOX_ID))
+: Widget<Gtk::Box>(GetProperty<CORE_UI, Glib::ustring>(NAVIGATION_ITEMS_BOX_ID))
 , dockerContainersItemBox("")
 , dockerImagesItemBox("")
 {

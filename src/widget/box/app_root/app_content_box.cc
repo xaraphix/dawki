@@ -6,7 +6,7 @@
 #include "sigc++/adaptors/bind.h"
 
 Dwki::AppContentBox::AppContentBox()
-: Widget<Gtk::Box>(GetProperty<Glib::ustring>(CONTENT_BOX_ID))
+: Widget<Gtk::Box>(GetProperty<CORE_UI, Glib::ustring>(CONTENT_BOX_ID))
 , headerHandle("content-draggable-header")
 , contentHeader()
 , dockerContainers()

@@ -5,7 +5,7 @@
 #include <sstream>
 #include <string>
 
-boost::property_tree::ptree Dwki::DawkiConfigParser::config = boost::property_tree::ptree{};
+boost::property_tree::ptree Dwki::DawkiConfigParser::dawkiUiConfig = boost::property_tree::ptree{};
 extern char _binary_src_config_dawki_widgets_config_json_start[];
 extern char _binary_src_config_dawki_widgets_config_json_end[];
 extern char _binary_src_config_dawki_widgets_config_json_size[];
@@ -24,5 +24,5 @@ Dwki::DawkiConfigParser::DawkiConfigParser()
   using boost::property_tree::ptree;
   using boost::property_tree::read_json;
   std::stringstream ss{ configJsonString };
-  read_json(ss, config);
+  read_json(ss, dawkiUiConfig);
 }

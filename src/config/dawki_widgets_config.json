@@ -5,6 +5,11 @@
     "style": {
       "cssPath": "/assets/dawki.css"
     },
+    "config": {
+      "ui": {
+        "filePath" : "~/.config/dawki/ui.json"
+      }
+    }, 
     "root": {
       "id": "root-box",
       "navigation": {
@@ -14,13 +19,13 @@
           "windowActions": {
             "id": "window-actions",
             "close": {
-              "id": "win-close-btn-md"
+              "id": "win-close-btn"
             },
             "minimize": {
-              "id": "win-min-btn-md"
+              "id": "win-min-btn"
             },
             "maximize": {
-              "id": "win-max-btn-md"
+              "id": "win-max-btn"
             }
           }
         },
