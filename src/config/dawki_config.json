@@ -6,8 +6,9 @@
       "cssPath": "/assets/dawki.css"
     },
     "config": {
+      "dir": "$HOME/.config/dawki/",
       "ui": {
-        "filePath" : "~/.config/dawki/ui.json"
+        "filename" : "ui.json"
       }
     }, 
     "root": {

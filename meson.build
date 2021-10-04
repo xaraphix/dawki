@@ -32,8 +32,10 @@ inc = include_directories('include')
 gnome = import('gnome')
 
 objcopy = find_program('objcopy')
-widgets_config_in = 'src/config/dawki_widgets_config.json'
-widgets_config_out = 'src/config/dawki_widgets_config.o'
+dawki_config_in = 'src/config/dawki_config.json'
+dawki_config_out = 'src/config/dawki_config.o'
+user_default_config_in = 'src/config/user_ui_default_config.json'
+user_default_config_out = 'src/config/user_ui_default_config.json.o'
 
 run_command('objcopy', 
             '--input-target',
@@ -42,8 +44,18 @@ run_command('objcopy',
             'pe-x86-64',
             '--binary-architecture',
             'i386:x86-64',
-            widgets_config_in, 
-            widgets_config_out)
+            dawki_config_in, 
+            dawki_config_out)
+
+run_command('objcopy', 
+            '--input-target',
+            'binary', 
+            '--output-target',
+            'pe-x86-64',
+            '--binary-architecture',
+            'i386:x86-64',
+            user_default_config_in, 
+            user_default_config_out)
 
 
 subdir('src')
@@ -58,7 +70,7 @@ asset_resources = gnome.compile_resources(
 exe = executable(
   'dawki', 
   asset_resources,
-  objects: [widgets_config_out],
+  objects: [dawki_config_out, user_default_config_out],
   link_with: dawki_lib,
   dependencies: [gio],
   install : true

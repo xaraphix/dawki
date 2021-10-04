@@ -2,8 +2,6 @@
 #include "dawki/config/dawki_config_parser.h"
 #include "dawki/widget/box/app_root/app_window_actions_box.h"
 #include "glibmm/ustring.h"
-#include "gtkmm/enums.h"
-#include "gtkmm/label.h"
 
 Dwki::AppNavigationHeaderBox::AppNavigationHeaderBox()
 : Widget<Gtk::Box>(GetProperty<CORE_UI, Glib::ustring>(NAVIGATION_HEADER_BOX_ID)), windowActions()
