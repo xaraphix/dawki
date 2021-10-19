@@ -19,7 +19,7 @@ private:
   static boost::property_tree::ptree dawkiConfig;
   static boost::property_tree::ptree userUiConfig;
   static constexpr auto DAWKI_CONFIG_PATH = "app.config.dir";
-  static constexpr auto UI_FILENAME = "app.config.ui.filename";
+  static constexpr auto UI_FILENAME       = "app.config.ui.filename";
 
 public:
   enum ConfigType

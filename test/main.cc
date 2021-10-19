@@ -5,7 +5,7 @@
 #include <cucumber-cpp/internal/step/StepMacros.hpp>
 #include <vector>
 
-class AlsaCtx
+class DawkiCtx
 {
 public:
 };

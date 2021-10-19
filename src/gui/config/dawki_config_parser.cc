@@ -57,7 +57,7 @@ DawkiConfigParser::initUserUIConfig()
     LogInfo << "NOT FOUND";
     boost::filesystem::path dir(dawkiConfigDirPath);
     char* data_start = _binary_src_config_user_ui_default_config_json_start;
-    char* data_end                                  = _binary_src_config_user_ui_default_config_json_end;
+    char* data_end   = _binary_src_config_user_ui_default_config_json_end;
     std::string configJsonString;
 
     while (data_start < data_end)
