@@ -20,6 +20,17 @@ boost_dep = [
     cxx.find_library('boost_log'),
 ]
 gio = dependency('gio-2.0')
+
+test_gtest_dep = dependency('gtest')
+test_cucumber_dep = cxx.find_library('cucumber-cpp')
+test_boost_dep = [
+    cxx.find_library('boost_regex'),
+    cxx.find_library('boost_filesystem'),
+    cxx.find_library('boost_program_options'),
+]
+
+cucumber_deps = [test_gtest_dep, test_cucumber_dep, test_boost_dep]
+
 dawki_deps = [
   gio,
   gtk_dep,
@@ -67,12 +78,32 @@ asset_resources = gnome.compile_resources(
 )
 
 
-exe = executable(
-  'dawki', 
-  asset_resources,
-  objects: [dawki_config_out, user_default_config_out],
-  link_with: dawki_lib,
-  dependencies: [gio],
-  install : true
+#exe = executable(
+#  'dawki',
+#  asset_resources,
+#  objects: [dawki_config_out, user_default_config_out],
+#  link_with: dawki_lib,
+#  dependencies: [gio],
+#  install : true
+#)
+
+
+dawki_dep = declare_dependency(
+    include_directories : inc,
+    link_with: dawki_lib,
+    dependencies: [gio]
 )
 
+
+test_src_files = [
+      'test/main.cc'
+  ]
+
+executable(
+    'dawki-test',
+    test_src_files,
+    asset_resources,
+    objects: [dawki_config_out, user_default_config_out],
+    dependencies: cucumber_deps + [dawki_dep],
+    install: true
+)

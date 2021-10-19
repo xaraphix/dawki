@@ -3,7 +3,6 @@ src_files = [
 'css/css_initializer.cc',
 'css/css_source_provider.cc',
 'logging/logging.cc',
-'main.cc',
 'store/dawki_store.cc',
 'widget/base/widget.cc',
 'widget/box/app_root/app_content_box.cc',
