@@ -48,3 +48,4 @@ logs/
 .fuse*
 assets/*.map
 .vimspector.json
+launch.json
