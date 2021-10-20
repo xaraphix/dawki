@@ -1,14 +1,14 @@
 project(
-  'Dawki', 
-  'cpp',
+ 'Dawki',
+ 'cpp',
   version : '0.1',
   default_options : [
     'warning_level=3',
-   	'cpp_std=c++2a', 
+    'cpp_std=c++2a',
     'build.cpp_std=c++2a',
     'prefix=/tmp/dawki/',
     ]
-  )
+ )
 
 cxx = meson.get_compiler('cpp')
 
