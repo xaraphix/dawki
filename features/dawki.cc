@@ -9,7 +9,7 @@
 
 using cucumber::ScenarioScope;
 
-class AlsaCtx
+class DawkiCtx
 {
 public:
 };
