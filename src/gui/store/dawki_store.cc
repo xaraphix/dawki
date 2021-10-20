@@ -1,5 +1,5 @@
 
-#include "dawki/store/dawki_store.h"
+#include "dawki/gui/store/dawki_store.h"
 
 using Dwki::DawkiStore;
 

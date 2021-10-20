@@ -1,4 +1,4 @@
-#include "dawki/css/css_initializer.h"
+#include "dawki/gui/css/css_initializer.h"
 
 #include <gtk/gtk.h>
 #include <gtkmm/widget.h>

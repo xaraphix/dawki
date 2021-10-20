@@ -1,6 +1,6 @@
-#include "dawki/widget/box/app_root/app_navigation_header_box.h"
-#include "dawki/config/dawki_config_parser.h"
-#include "dawki/widget/box/app_root/app_window_actions_box.h"
+#include "dawki/gui/widget/box/app_root/app_navigation_header_box.h"
+#include "dawki/gui/config/dawki_config_parser.h"
+#include "dawki/gui/widget/box/app_root/app_window_actions_box.h"
 #include "glibmm/ustring.h"
 
 Dwki::AppNavigationHeaderBox::AppNavigationHeaderBox()

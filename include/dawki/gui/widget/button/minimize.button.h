@@ -1,7 +1,7 @@
 
 #pragma once
 
-#include "dawki/widget/base/widget.h"
+#include "dawki/gui/widget/base/widget.h"
 #include "gtkmm/button.h"
 #include <string_view>
 

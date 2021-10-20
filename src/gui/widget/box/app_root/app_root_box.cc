@@ -1,5 +1,5 @@
-#include "dawki/widget/box/app_root/app_root_box.h"
-#include "dawki/config/dawki_config_parser.h"
+#include "dawki/gui/widget/box/app_root/app_root_box.h"
+#include "dawki/gui/config/dawki_config_parser.h"
 #include "glibmm/ustring.h"
 
 Dwki::AppRootBox::AppRootBox()

@@ -1,5 +1,5 @@
-#include "dawki/widget/button/minimize.button.h"
-#include "dawki/config/dawki_config_parser.h"
+#include "dawki/gui/widget/button/minimize.button.h"
+#include "dawki/gui/config/dawki_config_parser.h"
 #include "glibmm/ustring.h"
 #include "gtkmm/button.h"
 

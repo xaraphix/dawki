@@ -19,7 +19,7 @@ boost_dep = [
     cxx.find_library('boost_thread'),
     cxx.find_library('boost_log'),
 ]
-gio = dependency('gio-2.0')
+gio_dep = dependency('gio-2.0')
 
 test_gtest_dep = dependency('gtest')
 test_cucumber_dep = cxx.find_library('cucumber-cpp')
@@ -29,10 +29,10 @@ test_boost_dep = [
     cxx.find_library('boost_program_options'),
 ]
 
-cucumber_deps = [test_gtest_dep, test_cucumber_dep, test_boost_dep]
+test_cucumber_deps = [test_gtest_dep, test_cucumber_dep, test_boost_dep]
 
 dawki_deps = [
-  gio,
+  gio_dep,
   gtk_dep,
   thread_dep,
   boost_dep
@@ -41,12 +41,11 @@ dawki_deps = [
 
 inc = include_directories('include')
 gnome = import('gnome')
-
 objcopy = find_program('objcopy')
-dawki_config_in = 'src/config/dawki_config.json'
-dawki_config_out = 'src/config/dawki_config.o'
-user_default_config_in = 'src/config/user_ui_default_config.json'
-user_default_config_out = 'src/config/user_ui_default_config.json.o'
+dawki_layout_config_in = 'src/gui/config/app_layout_config.json'
+dawki_layout_config_out = 'src/gui/config/app_layout_config.o'
+dawki_appearance_config_in = 'src/gui/config/app_appearance_config.json'
+dawki_appearance_config_out = 'src/gui/config/app_appearance_config.json.o'
 
 run_command('objcopy', 
             '--input-target',
@@ -55,8 +54,8 @@ run_command('objcopy',
             'pe-x86-64',
             '--binary-architecture',
             'i386:x86-64',
-            dawki_config_in, 
-            dawki_config_out)
+            dawki_layout_config_in,
+            dawki_layout_config_out)
 
 run_command('objcopy', 
             '--input-target',
@@ -65,11 +64,8 @@ run_command('objcopy',
             'pe-x86-64',
             '--binary-architecture',
             'i386:x86-64',
-            user_default_config_in, 
-            user_default_config_out)
-
-
-subdir('src')
+            dawki_appearance_config_in,
+            dawki_appearance_config_out)
 
 asset_resources = gnome.compile_resources(
     'dawki-resourcess',
@@ -77,33 +73,26 @@ asset_resources = gnome.compile_resources(
     source_dir: ['assets'],
 )
 
+# Inside the subdirs dawki_core_lib, dawki_test_bundle are instantiated
+subdir('src')
+subdir('features')
 
-#exe = executable(
-#  'dawki',
-#  asset_resources,
-#  objects: [dawki_config_out, user_default_config_out],
-#  link_with: dawki_lib,
-#  dependencies: [gio],
-#  install : true
-#)
-
-
-dawki_dep = declare_dependency(
-    include_directories : inc,
-    link_with: dawki_lib,
-    dependencies: [gio]
+dawki_exe = executable(
+  'dawki',
+  asset_resources,
+  objects: [dawki_layout_config_out, dawki_appearance_config_out],
+  link_with: [dawki_core_lib, dawki_gui],
+  dependencies: [gio_dep],
+  install : true
 )
 
-
-test_src_files = [
-      'test/main.cc'
-  ]
-
-executable(
-    'dawki-test',
+dawki_test_exe = executable(
+    'dawki-test-bundle',
+    'features/dawki.cc',
     test_src_files,
     asset_resources,
-    objects: [dawki_config_out, user_default_config_out],
-    dependencies: cucumber_deps + [dawki_dep],
+    objects: [dawki_layout_config_out, dawki_appearance_config_out],
+    link_with: [dawki_core_lib],
+    dependencies: [test_cucumber_deps] + [gio_dep],
     install: true
 )

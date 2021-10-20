@@ -1,6 +1,6 @@
-#include "dawki/config/dawki_config_parser.h"
-#include "dawki/logging/logging.h"
-#include "dawki/widget/box/app_root/app_main_window.h"
+#include "dawki/core/logs/logs.h"
+#include "dawki/gui/config/dawki_config_parser.h"
+#include "dawki/gui/widget/box/app_root/app_main_window.h"
 #include <string>
 
 void

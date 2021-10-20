@@ -1,9 +1,9 @@
 #pragma once
 
-#include "dawki/widget/base/widget.h"
-#include "dawki/widget/button/close.button.h"
-#include "dawki/widget/button/maximize.button.h"
-#include "dawki/widget/button/minimize.button.h"
+#include "dawki/gui/widget/base/widget.h"
+#include "dawki/gui/widget/button/close.button.h"
+#include "dawki/gui/widget/button/maximize.button.h"
+#include "dawki/gui/widget/button/minimize.button.h"
 #include "gtkmm/box.h"
 
 namespace Dwki

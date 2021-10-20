@@ -1,8 +1,8 @@
 #pragma once
 
-#include "dawki/widget/base/widget.h"
-#include "dawki/widget/box/app_root/app_navigation_header_box.h"
-#include "dawki/widget/box/app_root/app_navigation_items_box.h"
+#include "dawki/gui/widget/base/widget.h"
+#include "dawki/gui/widget/box/app_root/app_navigation_header_box.h"
+#include "dawki/gui/widget/box/app_root/app_navigation_items_box.h"
 #include "gtkmm/box.h"
 #include "gtkmm/windowhandle.h"
 

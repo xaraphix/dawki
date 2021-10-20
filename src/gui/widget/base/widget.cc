@@ -1,5 +1,5 @@
-#include "dawki/widget/base/widget.h"
-#include "dawki/css/css_source_provider.h"
+#include "dawki/gui/widget/base/widget.h"
+#include "dawki/gui/css/css_source_provider.h"
 #include "glibmm/ustring.h"
 #include "gtkmm/widget.h"
 #include "pangomm/rectangle.h"

@@ -2,7 +2,7 @@ src_files = [
 'config/dawki_config_parser.cc',
 'css/css_initializer.cc',
 'css/css_source_provider.cc',
-'logging/logging.cc',
+'main.cc',
 'store/dawki_store.cc',
 'widget/base/widget.cc',
 'widget/box/app_root/app_content_box.cc',
@@ -19,7 +19,7 @@ src_files = [
 'widget/button/minimize.button.cc',
 ]
 
-dawki_lib = static_library(
+dawki_gui = static_library(
   'dawki_gui',
   src_files,
   dependencies: dawki_deps,
